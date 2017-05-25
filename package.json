@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tonyspiro/grunt-html5-boilerplate"
+    "url": "https://github.com/DecentLabs/DecentLabs.github.io"
   },
   "author": "Peter Banik <peter@prioritylane.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tonyspiro/grunt-html5-boilerplate/issues"
+    "url": "https://github.com/DecentLabs/DecentLabs.github.io/issues"
   },
-  "homepage": "https://github.com/tonyspiro/grunt-html5-boilerplate"
+  "homepage": "https://www.decred.org"
 }
