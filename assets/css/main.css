@@ -1008,7 +1008,7 @@ body {
     min-width: 320px; } }
 
 body {
-  background: #312450; }
+  background: #20153e; }
   body.is-loading *, body.is-loading *:before, body.is-loading *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -1022,7 +1022,7 @@ body {
 /* Type */
 body, input, select, textarea {
   color: rgba(255, 255, 255, 0.55);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 16.5pt;
   font-weight: normal;
   line-height: 1.75; }
@@ -1074,10 +1074,10 @@ h1 {
     position: relative;
     padding-bottom: 0.35em; }
     h1.major:after {
-      background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-      background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-      background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-      background-image: linear-gradient(to right, #5e42a6, #b74e91);
+      background-image: -moz-linear-gradient(to right, #20153e, #b74e91);
+      background-image: -webkit-linear-gradient(to right, #20153e, #b74e91);
+      background-image: -ms-linear-gradient(to right, #20153e, #b74e91);
+      background-image: linear-gradient(to right, #20153e, #b74e91);
       -moz-transition: max-width 0.2s ease;
       -webkit-transition: max-width 0.2s ease;
       -ms-transition: max-width 0.2s ease;
@@ -1277,7 +1277,7 @@ button,
   button.special,
   .button.special {
     background-color: #ffffff;
-    color: #312450 !important; }
+    color: #20153e !important; }
     input[type="submit"].special:after,
     input[type="reset"].special:after,
     input[type="button"].special:after,
@@ -1589,7 +1589,7 @@ textarea {
     display: none; }
 
 select option {
-  background-color: #312450;
+  background-color: #20153e;
   color: #ffffff; }
 
 input[type="text"],
@@ -1705,16 +1705,16 @@ input[type="radio"] + label:before {
     display: block;
     background: #ffffff;
     border-radius: 100%;
-    color: #312450;
+    color: #20153e;
     text-align: center;
     line-height: 2.5em;
     margin: 0 0 1.3em 0; }
     .icon.major:before {
       font-size: 1.25em; }
       .wrapper.style1 .icon.major:before {
-        color: #5e42a6; }
+        color: #20153e; }
       .wrapper.style1-alt .icon.major:before {
-        color: #493382; }
+        color: #1c1236; }
       .wrapper.style2 .icon.major:before {
         color: #5052b5; }
       .wrapper.style2-alt .icon.major:before {
@@ -2004,7 +2004,7 @@ header h6 + p {
       -webkit-transition: opacity 1s ease;
       -ms-transition: opacity 1s ease;
       transition: opacity 1s ease;
-      background: rgba(49, 36, 80, 0.9);
+      background: rgba(32, 21, 62, 0.9);
       content: '';
       display: block;
       height: 100%;
@@ -2135,11 +2135,11 @@ table {
       .wrapper > .inner {
         padding: 3em 2em 1em 2em ; } }
   .wrapper.alt {
-    background-color: #261c3e; }
+    background-color: #160f2b; }
   .wrapper.style1 {
-    background-color: #5e42a6; }
+    background-color: #20153e; }
   .wrapper.style1-alt {
-    background-color: #493382; }
+    background-color: #1c1236; }
   .wrapper.style2 {
     background-color: #5052b5; }
   .wrapper.style2-alt {
@@ -2225,7 +2225,7 @@ table {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  background-color: #5e42a6;
+  background-color: #20153e;
   cursor: default;
   padding: 1.75em 2em; }
   #header > .title {
@@ -2318,7 +2318,7 @@ table {
 /* Sidebar */
 #sidebar {
   padding: 2.5em 2.5em 0.5em 2.5em ;
-  background: #312450;
+  background: #20153e;
   cursor: default;
   height: 100vh;
   left: 0;
@@ -2499,12 +2499,12 @@ table {
       right: 0;
       width: 100%; }
     #sidebar nav a:before {
-      background: #3c2c62; }
+      background: #2a1b51; }
     #sidebar nav a:after {
-      background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-      background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-      background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-      background-image: linear-gradient(to right, #5e42a6, #b74e91);
+      background-image: -moz-linear-gradient(to right, #20153e, #b74e91);
+      background-image: -webkit-linear-gradient(to right, #20153e, #b74e91);
+      background-image: -ms-linear-gradient(to right, #20153e, #b74e91);
+      background-image: linear-gradient(to right, #20153e, #b74e91);
       -moz-transition: max-width 0.2s ease;
       -webkit-transition: max-width 0.2s ease;
       -ms-transition: max-width 0.2s ease;
