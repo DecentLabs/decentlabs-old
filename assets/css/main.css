@@ -2598,7 +2598,7 @@ table {
       display: none; } }
   @media screen and (max-width: 736px) {
     #intro p, #why p {
-      font-size: 1em; } }
+      font-size: 1.5em; } }
 
 @media screen and (max-width: 1280px) {
   #intro, #why {
