@@ -38259,6 +38259,42 @@ module.exports = {
 			"address": "0xd2a141e1975ae418c4123540c752b18a907bc597",
 			"updated_at": 1498140681072
 		},
+		"3": {
+			"events": {
+				"0x34f5f1c0de0c5064c900b95aca75740789fce2c778343bcfb333e45219aa8989": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "ticketId",
+							"type": "uint256"
+						}
+					],
+					"name": "e_BetPlaced",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": true,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0xd86ba6c621d376be91e49bcf73f11fdfb591f721",
+			"updated_at": 1498145994732
+		},
 		"1497285939669": {
 			"events": {},
 			"links": {},
@@ -39767,7 +39803,7 @@ module.exports = {
 		}
 	},
 	"schema_version": "0.0.5",
-	"updated_at": 1498141897662
+	"updated_at": 1498145994732
 };
 
 /***/ }),
@@ -39987,6 +40023,59 @@ module.exports = {
 			"links": {},
 			"address": "0x9ba7216b005d70265ca5bfb91da7368c1583b671",
 			"updated_at": 1498140681069
+		},
+		"3": {
+			"events": {
+				"0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "gameIdx",
+							"type": "uint256"
+						},
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameAdded",
+					"type": "event"
+				},
+				"0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameCreated",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": true,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0xbcb49061c4f5930305fd2adb2b99f03976cc7710",
+			"updated_at": 1498145994729
 		},
 		"1498033584600": {
 			"events": {
@@ -40513,7 +40602,7 @@ module.exports = {
 		}
 	},
 	"schema_version": "0.0.5",
-	"updated_at": 1498141897662
+	"updated_at": 1498145994729
 };
 
 /***/ }),

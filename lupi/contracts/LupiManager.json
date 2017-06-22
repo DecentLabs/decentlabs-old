@@ -212,6 +212,59 @@
       "address": "0x9ba7216b005d70265ca5bfb91da7368c1583b671",
       "updated_at": 1498140681069
     },
+    "3": {
+      "events": {
+        "0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "gameIdx",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameAdded",
+          "type": "event"
+        },
+        "0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameCreated",
+          "type": "event"
+        },
+        "0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "old",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "current",
+              "type": "address"
+            }
+          ],
+          "name": "NewOwner",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xbcb49061c4f5930305fd2adb2b99f03976cc7710",
+      "updated_at": 1498145994729
+    },
     "1498033584600": {
       "events": {
         "0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
@@ -737,5 +790,5 @@
     }
   },
   "schema_version": "0.0.5",
-  "updated_at": 1498141897662
+  "updated_at": 1498145994729
 }
