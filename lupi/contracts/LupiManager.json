@@ -1,0 +1,741 @@
+{
+  "contract_name": "LupiManager",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "games",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_new",
+          "type": "address"
+        }
+      ],
+      "name": "setOwner",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getGamesCount",
+      "outputs": [
+        {
+          "name": "ct",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_requiredBetAmount",
+          "type": "uint256"
+        },
+        {
+          "name": "_ticketCountLimit",
+          "type": "uint256"
+        },
+        {
+          "name": "_revealPeriodLength",
+          "type": "uint256"
+        },
+        {
+          "name": "_feePt",
+          "type": "uint256"
+        }
+      ],
+      "name": "createGame",
+      "outputs": [
+        {
+          "name": "gameIdx",
+          "type": "uint256"
+        },
+        {
+          "name": "gameAddress",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "addGame",
+      "outputs": [
+        {
+          "name": "idx",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "gameIdx",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "gameAddress",
+          "type": "address"
+        }
+      ],
+      "name": "e_GameAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "gameAddress",
+          "type": "address"
+        }
+      ],
+      "name": "e_GameCreated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "old",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "current",
+          "type": "address"
+        }
+      ],
+      "name": "NewOwner",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x60606040525b60008054600160a060020a03191633600160a060020a03161790555b5b61135a806100316000396000f3006060604052361561005c5763ffffffff60e060020a600035041663117a5b90811461005e57806313af40351461008d57806317b7a476146100ab5780638da5cb5b146100cd578063bdaae1e7146100f9578063d72d04db14610136575bfe5b341561006657fe5b610071600435610164565b60408051600160a060020a039092168252519081900360200190f35b341561009557fe5b6100a9600160a060020a0360043516610196565b005b34156100b357fe5b6100bb610207565b60408051918252519081900360200190f35b34156100d557fe5b61007161020e565b60408051600160a060020a039092168252519081900360200190f35b341561010157fe5b61011560043560243560443560643561021d565b60408051928352600160a060020a0390911660208301528051918290030190f35b341561013e57fe5b6100bb600160a060020a03600435166102cc565b60408051918252519081900360200190f35b600180548290811061017257fe5b906000526020600020900160005b915054906101000a9004600160a060020a031681565b60005433600160a060020a03908116911614156102025760008054604051600160a060020a03808516939216917f70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b236491a360008054600160a060020a031916600160a060020a0383161790555b5b5b50565b6001545b90565b600054600160a060020a031681565b60008054819033600160a060020a03908116911614156102c15785858585610243610368565b80858152602001848152602001838152602001828152602001945050505050604051809103906000f080151561027557fe5b60408051600160a060020a038316815290519192507f2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f919081900360200190a16102be816102cc565b91505b5b5b94509492505050565b6000805433600160a060020a0390811691161415610361576001805481908082016102f78382610378565b916000526020600020900160005b8154600160a060020a038088166101009390930a83810291021990911617909155604080519182525192909103925082917f8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c9181900360200190a25b5b5b919050565b604051610f6b806103c483390190565b81548183558181151161039c5760008381526020902061039c9181019083016103a2565b5b505050565b61020b91905b808211156103bc57600081556001016103a8565b5090565b9056006060604052600680546000919060ff19166001835b0217905550341561002157fe5b604051608080610f6b83398101604090815281516020830151918301516060909301519092905b5b60008054600160a060020a03191633600160a060020a03161790555b600083116100735760006000fd5b600082116100815760006000fd5b83620f42408282025b04106100965760006000fd5b60018481556002849055600483905560038290556100b56007826100c0565b505b50505050610132565b8154818355818115116100ec576004028160040283600052602060002091820191016100ec91906100f2565b5b505050565b61012f91905b8082111561012b578054600160a060020a03191681556000600182018190556002820181905560038201556004016100f8565b5090565b90565b610e2a806101416000396000f300606060405236156101385763ffffffff60e060020a600035041663042b5fed811461013a5780630e2c09be146101575780630f3e70331461017257806313af4035146101a657806314034bd2146101c45780631809b099146101d6578063278ecde1146101fe57806327afddaf1461021357806338e6f0281461023a5780634bd268eb1461025c57806350b447121461026e578063550a0dfb146102b15780636b0b6df3146102d357806384bc76a6146102f55780638da5cb5b1461038e578063bbd78e93146103ba578063bc85c716146103dc578063be71248a14610404578063bef6ccba14610416578063bf5c982214610438578063c19d93fb1461045a578063c26eea541461048e578063df34062f146104b0578063e7610d23146104d5578063ed2c48d5146104f7578063eff3415114610519575bfe5b61014560043561053b565b60408051918252519081900360200190f35b341561015f57fe5b610170600435602435604435610630565b005b341561017a57fe5b610145600160a060020a0360043516602435604435610642565b60408051918252519081900360200190f35b34156101ae57fe5b610170600160a060020a0360043516610689565b005b34156101cc57fe5b6101706106fa565b005b34156101de57fe5b610145600435602435610847565b60408051918252519081900360200190f35b341561020657fe5b610170600435610879565b005b341561021b57fe5b610170600160a060020a0360043516602435604435606435610927565b005b341561024257fe5b610145610a46565b60408051918252519081900360200190f35b341561026457fe5b610170610a4c565b005b341561027657fe5b610281600435610aa1565b60408051600160a060020a0390951685526020850193909352838301919091526060830152519081900360800190f35b34156102b957fe5b610145610ae5565b60408051918252519081900360200190f35b34156102db57fe5b610145610aeb565b60408051918252519081900360200190f35b34156102fd57fe5b610305610af1565b604051808f600381111561031557fe5b60ff168152602081019e909e52506040808e019c909c5260608d019a909a5260808c019890985260a08b019690965260c08a019490945260e0890192909252610100880152610120870152610140860152600160a060020a03166101608501526101808401526101a083015251908190036101c0019150f35b341561039657fe5b61039e610bd5565b60408051600160a060020a039092168252519081900360200190f35b34156103c257fe5b610145610be4565b60408051918252519081900360200190f35b34156103e457fe5b610145600435602435610bea565b60408051918252519081900360200190f35b341561040c57fe5b610170610c00565b005b341561041e57fe5b610145610c9a565b60408051918252519081900360200190f35b341561044057fe5b610145610ca0565b60408051918252519081900360200190f35b341561046257fe5b61046a610cc7565b6040518082600381111561047a57fe5b60ff16815260200191505060405180910390f35b341561049657fe5b610145610cd0565b60408051918252519081900360200190f35b34156104b857fe5b610145600435610cd6565b60408051918252519081900360200190f35b34156104dd57fe5b610145610cf9565b60408051918252519081900360200190f35b34156104ff57fe5b610145610cff565b60408051918252519081900360200190f35b341561052157fe5b610145610d1b565b60408051918252519081900360200190f35b6000805b60065460ff16600381111561055057fe5b1461055b5760006000fd5b600154341461056a5760006000fd5b600254600754600190910190106105815760006000fd5b6001600780548060010182816105979190610d41565b916000526020600020906004020160005b5060408051608081018252600160a060020a0333168082523460208301819052828401899052600060609093018390528454600160a060020a031916909117845560018401556002830187905560039092018290555192909103925082917f34f5f1c0de0c5064c900b95aca75740789fce2c778343bcfb333e45219aa89899190a25b919050565b61063c33848484610927565b5b505050565b60008215156106515760006000fd5b5060408051606060020a600160a060020a038616028152601481018490526034810183905290519081900360540190205b9392505050565b60005433600160a060020a03908116911614156106f55760008054604051600160a060020a03808516939216917f70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b236491a360008054600160a060020a031916600160a060020a0383161790555b5b5b50565b60008080808060015b60065460ff16600381111561071457fe5b1461071f5760006000fd5b600854600754600019011480610736575060055442115b15156107425760006000fd5b600092505b600a548310156107cd57600a80548490811061075f57fe5b906000526020600020900160005b5054915084158061077d57508482105b156107c0575060008181526009602052604090208054600114156107c0578194508060008154811015156107ad57fe5b906000526020600020900160005b505493505b5b5b600190920191610747565b8415156107ee57600680546003919060ff19166001835b0217905550610809565b600680546002919060ff19166001835b0217905550600b8490555b600054600160a060020a03166108fc610820610ca0565b6040518115909202916000818181858888f19350505050151561083f57fe5b5b5050505050565b60096020528160005260406000208181548110151561086257fe5b906000526020600020900160005b91509150505481565b60008060035b60065460ff16600381111561089057fe5b1461089b5760006000fd5b60078054849081106108a957fe5b906000526020600020906004020160005b509150600082600101541115156108d15760006000fd5b600354600154620f424091025b60018401805460009182905585546040519490930490039350600160a060020a039091169183156108fc0291849190818181858888f19350505050151561063c57fe5b5b505050565b60008080805b60065460ff16600381111561093e57fe5b141561094c5761094c610a4c565b5b60015b60065460ff16600381111561096157fe5b1461096c5760006000fd5b8415156109795760006000fd5b600780548790811061098757fe5b906000526020600020906004020160005b506003810154909350156109ab57610a3d565b6109b6878686610642565b600284015490925082146109ca5760006000fd5b5060038201849055600084815260096020526040902080541515610a0e57600a8054600181016109fa8382610d73565b916000526020600020900160005b50869055505b8054819060018101610a208382610d73565b916000526020600020900160005b50879055506008805460010190555b50505050505050565b60045481565b60005b60065460ff166003811115610a6057fe5b14610a6b5760006000fd5b60075460025460001990910114610a825760006000fd5b600680546001919060ff191682805b021790555060045442016005555b565b6007805482908110610aaf57fe5b906000526020600020906004020160005b50805460018201546002830154600390930154600160a060020a039092169350919084565b60035481565b60015481565b60006000600060006000600060006000600060006000600060006000600660009054906101000a900460ff16600154600354600254600454600160078054905003600854610b3d610ca0565b610b45610d1b565b610b4d610cff565b600b546007805482908110610b5e57fe5b906000526020600020906004020160005b5054600b5460078054600160a060020a03909316929091908110610b8f57fe5b906000526020600020906004020160005b50600301546005549d509d509d509d509d509d509d509d509d509d509d509d509d509d505b909192939495969798999a9b9c9d565b600054600160a060020a031681565b60085481565b6000610bf7338484610642565b90505b92915050565b600060025b60065460ff166003811115610c1657fe5b14610c215760006000fd5b6007600b54815481101515610c3257fe5b906000526020600020906004020160005b50905060008160010154111515610c5a5760006000fd5b600060018201558054600160a060020a03166108fc610c77610d1b565b6040518115909202916000818181858888f1935050505015156106f557fe5b5b50565b60055481565b6000620f42406003546001546001600780549050030202811515610cc057fe5b0490505b90565b60065460ff1681565b600b5481565b600a805482908110610ce457fe5b906000526020600020900160005b5054905081565b60025481565b6000610d09610ca0565b60015460075460001901020390505b90565b6000620f4240600354620f4240036001546002540202811515610cc057fe5b0490505b90565b81548183558181151161063c5760040281600402836000526020600020918201910161063c9190610d9d565b5b505050565b81548183558181151161063c5760008381526020902061063c918101908301610ddd565b5b505050565b610cc491905b80821115610dd6578054600160a060020a0319168155600060018201819055600282018190556003820155600401610da3565b5090565b90565b610cc491905b80821115610dd65760008155600101610de3565b5090565b905600a165627a7a72305820a088fa6c3444197a8e04b9f5555fb51378a32588c356ecdc550701dc5117681b0029a165627a7a723058205adeea74ff0f86fa53669146bb4879649e0701bddb23a115bc562313bbd6ba430029",
+  "networks": {
+    "1": {
+      "events": {
+        "0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "gameIdx",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameAdded",
+          "type": "event"
+        },
+        "0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "old",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "current",
+              "type": "address"
+            }
+          ],
+          "name": "NewOwner",
+          "type": "event"
+        },
+        "0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameCreated",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x9ba7216b005d70265ca5bfb91da7368c1583b671",
+      "updated_at": 1498140681069
+    },
+    "1498033584600": {
+      "events": {
+        "0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "gameIdx",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameAdded",
+          "type": "event"
+        },
+        "0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "old",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "current",
+              "type": "address"
+            }
+          ],
+          "name": "NewOwner",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xdde3e5da96299f1a59ca3c5508f09c54c8c2d4d9",
+      "updated_at": 1498040156107
+    },
+    "1498041263321": {
+      "events": {
+        "0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "gameIdx",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameAdded",
+          "type": "event"
+        },
+        "0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "old",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "current",
+              "type": "address"
+            }
+          ],
+          "name": "NewOwner",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xb245f87b40dc6a1f3533de5a4d6a86662631da10",
+      "updated_at": 1498041282502
+    },
+    "1498041796932": {
+      "events": {
+        "0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "gameIdx",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameAdded",
+          "type": "event"
+        },
+        "0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "old",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "current",
+              "type": "address"
+            }
+          ],
+          "name": "NewOwner",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x9482e3d9a4c44cd2f97e9aba168189d5c6ce9e0d",
+      "updated_at": 1498041846009
+    },
+    "1498042069720": {
+      "events": {
+        "0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "gameIdx",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameAdded",
+          "type": "event"
+        },
+        "0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "old",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "current",
+              "type": "address"
+            }
+          ],
+          "name": "NewOwner",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x67283a6a40387cf2be4b93f6c731e292a6813f2c",
+      "updated_at": 1498044623746
+    },
+    "1498047259865": {
+      "events": {
+        "0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "gameIdx",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameAdded",
+          "type": "event"
+        },
+        "0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "old",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "current",
+              "type": "address"
+            }
+          ],
+          "name": "NewOwner",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xd294753f988e6394c82a6e15962ef6806a80c752",
+      "updated_at": 1498050974853
+    },
+    "1498053900886": {
+      "events": {
+        "0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "gameIdx",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameAdded",
+          "type": "event"
+        },
+        "0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "old",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "current",
+              "type": "address"
+            }
+          ],
+          "name": "NewOwner",
+          "type": "event"
+        },
+        "0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameCreated",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xf61010ac6f3de0a1095c0fc5099f356f92f51633",
+      "updated_at": 1498061489540
+    },
+    "1498069545107": {
+      "events": {
+        "0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "gameIdx",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameAdded",
+          "type": "event"
+        },
+        "0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameCreated",
+          "type": "event"
+        },
+        "0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "old",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "current",
+              "type": "address"
+            }
+          ],
+          "name": "NewOwner",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x1578c4406b6a8808bae0945036a8896ede3c5de3",
+      "updated_at": 1498069553139
+    },
+    "1498136714624": {
+      "events": {
+        "0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "gameIdx",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameAdded",
+          "type": "event"
+        },
+        "0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameCreated",
+          "type": "event"
+        },
+        "0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "old",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "current",
+              "type": "address"
+            }
+          ],
+          "name": "NewOwner",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x1578c4406b6a8808bae0945036a8896ede3c5de3",
+      "updated_at": 1498136790835
+    },
+    "1498139877042": {
+      "events": {
+        "0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "gameIdx",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameAdded",
+          "type": "event"
+        },
+        "0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameCreated",
+          "type": "event"
+        },
+        "0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "old",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "current",
+              "type": "address"
+            }
+          ],
+          "name": "NewOwner",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x1578c4406b6a8808bae0945036a8896ede3c5de3",
+      "updated_at": 1498139890731
+    },
+    "1498141101208": {
+      "events": {
+        "0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "gameIdx",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameAdded",
+          "type": "event"
+        },
+        "0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameCreated",
+          "type": "event"
+        },
+        "0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "old",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "current",
+              "type": "address"
+            }
+          ],
+          "name": "NewOwner",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x1578c4406b6a8808bae0945036a8896ede3c5de3",
+      "updated_at": 1498141114337
+    },
+    "1498141833406": {
+      "events": {
+        "0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "gameIdx",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameAdded",
+          "type": "event"
+        },
+        "0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "gameAddress",
+              "type": "address"
+            }
+          ],
+          "name": "e_GameCreated",
+          "type": "event"
+        },
+        "0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "old",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "current",
+              "type": "address"
+            }
+          ],
+          "name": "NewOwner",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x1578c4406b6a8808bae0945036a8896ede3c5de3",
+      "updated_at": 1498141897662
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1498141897662
+}
