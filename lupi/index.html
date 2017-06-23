@@ -124,9 +124,11 @@
           <br>Your account: <span id="accountAddress">?</span>
           <br>Your a/c balance: <span id="accountBalance">?</span> ether
           <br>LupiManager address: <span id="lupiManagerAddress">?</span>
+          <br>LupiManager owner: <span id="lupiManagerOwner">?</span>
           <br>Games count: <span id="gamesCount">?</span>
           <br>Selected game idx: <span id="gameIdx">?</span>
           <br>Game contract address: <span id="contractAddress">?</span>
+          <br>Game contract owner: <span id="contractOwner">?</span>
           <br>Game contract balance: <span id="contractBalance">?</span>
           </span>
           <br>
@@ -134,10 +136,10 @@
            <div id="createGameDiv">
                <h3>Create new game</h3>
                <br>only by owner<br>
-               <br><label for="requiredBetAmountInput">Bet amount:</label><input type="text" id="requiredBetAmountInput" style="width: auto;" size="10" placeholder=""></input> ether
+               <br><label for="requiredBetAmountInput">Bet amount:</label><input type="number" id="requiredBetAmountInput" style="width: auto;" size="10" placeholder=""></input> ether
                <br><label for="ticketCountLimitInput">Ticket limit:</label><input type="number" id="ticketCountLimitInput" style="width: auto;" size="10" placeholder=""></input>
                <br><label for="revealPeriodLengthInput">Reveal period:</label><input type="number" id="revealPeriodLengthInput" style="width: auto;" size="10" placeholder=""></input> minutes
-               <br><label for="feePtInput">fee:</label><input type="text" id="feePtInput" placeholder="" style="width: auto;" size="3" maxlength="3"></input> %
+               <br><label for="feePtInput">fee:</label><input type="number" id="feePtInput" placeholder="" style="width: auto;" size="5" maxlength="5"></input> %
                <br><br><button id="send" onclick="App.createGame()">Create new game</button>
                <hr>
            </div> <!-- createGameDiv -->
