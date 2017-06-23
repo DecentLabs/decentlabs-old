@@ -47,46 +47,57 @@
             <br>Ticket cost for one guess: <span id="requiredBetAmount">?</span> ether
             <br><button id="send" onclick="App.placeBet()">Submit my guess</button>
             <br>
+            <br>
+            <a href="https://github.com/DecentLabs/ethereum-lupi/blob/master/README.md" target="_blank">Learn more about the game</a>
+            <br>
             <hr>
       </div> <!-- guessDiv -->
-
-      <div id="revealStartDiv" style="display:none">
-          <h2>Guessing period over </h2>
-          <br>Maximum number of bets placed. Start the reveal period (anybody can initiate it).
-          <br>Reveal period will be <span id="revealPeriodLength">?</span>
-          <br><br><button id="send" onclick="App.startRevealing()">Start revealing</button>
-          <hr>
-      </div> <!-- revealStartDiv -->
 
       <div id="revealOverDiv" style="display:none">
           <h2>Reveal period over</h2>
           <br>Reveal time is over but <span id="unRevealedCount">?</span> bets are not revealed yet.
-          <br>Tickets still can be revealed but from now anybody can close the reveal period by initiating Winner declaration.
+          <br>You can close the reveal period by initiating Winner declaration.
+          <br><span class="hint">Tickets still can be revealed until winner declaration</span>
           <br><br><button id="send" onclick="App.declareWinner()">Close reveal period and Declare winner</button>
           <br>
           <hr>
       </div> <!-- revealOverDiv -->
 
+      <div id="revealDiv" style="display:none">
+            <div id="revealFirstDiv">
+                <h2>All bets received, start revealing</h2>
+                <br>Maximum number of bets placed. Start the reveal period by revealing a guess.
+                <br>Reveal period will last <span id="revealPeriodLength1">?</span>
+            </div> <!-- firstRevealDiv -->
+            <div id="revealRunningDiv">
+                <h2>Reveal your ticket</h2>
+                <br>Reveal period will end on <span id="revealPeriodEnds">?</span>
+            </div> <!-- additionalRevealDiv -->
+            <br><span id="revealedCount">?</span> tickets revealed from total of <span id="ticketCountLimit2">?</span>
+            <br><label for="ticketId">Ticket id:</label><input type="text" id="ticketId" style="width: auto;" size="10" placeholder="ticket id"></input>
+            <br><label for="salt">Secret key:</label><input type="text" id="salt" style="width: auto;" size="66" maxlength="66" placeholder="0x0...."></input>
+            <br><label for="revealGuess">Bet you placed:</label><input type="text" id="revealGuess"s tyle="width: auto;" size="10" placeholder="number you played"></input>
+            <br><br><button id="send" onclick="App.revealBet()">Reveal my guess</button>
+            <br>
+            <hr>
+      </div> <!-- revealDiv -->
+
+      <div id="revealStartOnlyDiv" style="display:none">
+          <h3>Start reveal period</h3>
+          Start the reveal period withouth a reveal (anybody can initiate it).
+          <br>Reveal period will be <span id="revealPeriodLength2">?</span>
+          <br><br><button id="send" onclick="App.startRevealing()">Start revealing</button>
+          <hr>
+      </div> <!-- revealStartDiv -->
+
       <div id="revealOverAllRevealedDiv" style="display:none">
           <h2>Reveal period over</h2>
-          <br>Reveal time is over and all bets revealed.
-          <br>Initiate winner declaration! (anybody can call it :) )
+          <br>All bets revealed.
+          <br>Let's declare the winner! (anybody can do it :) )
           <br><br><button id="send" onclick="App.declareWinner()">Declare winner</button>
           <br>
           <hr>
       </div> <!-- revealOverDiv -->
-
-      <div id="revealDiv" style="display:none">
-          <h2>Reveal your ticket</h2>
-          <br>Reveal period end earliest on <span id="revealPeriodEnds">?</span> (you can reveal even after that time until winner is declared )
-          <br><span id="revealedCount">?</span> tickets revealed from total of <span id="ticketCountLimit2">?</span>
-          <br><label for="ticketId">Ticket id:</label><input type="text" id="ticketId" style="width: auto;" size="10" placeholder="ticket id"></input>
-          <br><label for="salt">Secret key:</label><input type="text" id="salt" style="width: auto;" size="66" maxlength="66" placeholder="0x0...."></input>
-          <br><label for="revealGuess">Bet you placed:</label><input type="text" id="revealGuess"s tyle="width: auto;" size="10" placeholder="number you played"></input>
-          <br><br><button id="send" onclick="App.revealBet()">Reveal my guess</button>
-          <br>
-          <hr>
-      </div> <!-- revealDiv -->
 
       <div id="wonDiv" style="display:none">
           <h2>Someone won the game</h2>

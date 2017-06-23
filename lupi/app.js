@@ -39980,10 +39980,82 @@ module.exports = {
 			"links": {},
 			"address": "0x750dc6365cd4e62e0322e97ad3e31019d0f63094",
 			"updated_at": 1498224533800
+		},
+		"1498239282343": {
+			"events": {
+				"0x34f5f1c0de0c5064c900b95aca75740789fce2c778343bcfb333e45219aa8989": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "ticketId",
+							"type": "uint256"
+						}
+					],
+					"name": "e_BetPlaced",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": false,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0x750dc6365cd4e62e0322e97ad3e31019d0f63094",
+			"updated_at": 1498239302391
+		},
+		"1498240757235": {
+			"events": {
+				"0x34f5f1c0de0c5064c900b95aca75740789fce2c778343bcfb333e45219aa8989": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "ticketId",
+							"type": "uint256"
+						}
+					],
+					"name": "e_BetPlaced",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": false,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0xd7177641cd6388c540d7082b4958abad8661ce3a",
+			"updated_at": 1498240841025
 		}
 	},
 	"schema_version": "0.0.5",
-	"updated_at": 1498231098244
+	"updated_at": 1498240841025
 };
 
 /***/ }),
@@ -41044,10 +41116,116 @@ module.exports = {
 			"links": {},
 			"address": "0x1578c4406b6a8808bae0945036a8896ede3c5de3",
 			"updated_at": 1498224533805
+		},
+		"1498239282343": {
+			"events": {
+				"0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "gameIdx",
+							"type": "uint256"
+						},
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameAdded",
+					"type": "event"
+				},
+				"0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameCreated",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": false,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0x1578c4406b6a8808bae0945036a8896ede3c5de3",
+			"updated_at": 1498239302392
+		},
+		"1498240757235": {
+			"events": {
+				"0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "gameIdx",
+							"type": "uint256"
+						},
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameAdded",
+					"type": "event"
+				},
+				"0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameCreated",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": false,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0x2fb7349d5097a5c6d22dc4e9909346ebd37ccd92",
+			"updated_at": 1498240841026
 		}
 	},
 	"schema_version": "0.0.5",
-	"updated_at": 1498231098246
+	"updated_at": 1498240841026
 };
 
 /***/ }),
@@ -42671,7 +42849,6 @@ window.App = {
             lupiManagerInstance = res;
             return lupiManagerInstance.owner();
         }).then( res => {
-            console.log(typeof res, JSON.stringify(res));
             if (res ==  "0x" ) {
                 throw("lupiManager at " + lupiManager.address + " returned 0x owner() - not deployed?");
             }
@@ -42756,15 +42933,20 @@ window.App = {
         document.getElementById("unRevealedCount").innerHTML = roundInfo.ticketCount - roundInfo.revealedCount;
         document.getElementById("ticketCountLimit1").innerHTML = roundInfo.ticketCountLimit;
         document.getElementById("ticketCountLimit2").innerHTML = roundInfo.ticketCountLimit;
-        document.getElementById("revealPeriodLength").innerHTML  = countdown(0, roundInfo.revealPeriodLength*1000).toString();
+
+        document.getElementById("revealPeriodLength1").innerHTML  = countdown(0, roundInfo.revealPeriodLength*1000).toString();
+        document.getElementById("revealPeriodLength2").innerHTML  = countdown(0, roundInfo.revealPeriodLength*1000).toString();
         document.getElementById("revealPeriodEnds").innerHTML = moment.unix(roundInfo.revealPeriodEnds).format("DD/MMM/YYYY HH:mm:ss");
         document.getElementById("roundInfoDebug").innerHTML = JSON.stringify(roundInfo,null, 4);
         document.getElementById("winningNumber").innerHTML = roundInfo.winningNumber;
         document.getElementById("winningAddress").innerHTML = roundInfo.winningAddress;
 
         var guessDiv = document.getElementById("guessDiv");
-        var revealStartDiv = document.getElementById("revealStartDiv");
+
         var revealDiv = document.getElementById("revealDiv");
+        var revealFirstDiv = document.getElementById("revealFirstDiv");
+        var revealRunningDiv = document.getElementById("revealRunningDiv");
+        var revealStartOnlyDiv = document.getElementById("revealStartOnlyDiv");
         var revealOverDiv = document.getElementById("revealOverDiv");
         var revealOverAllRevealedDiv = document.getElementById("revealOverAllRevealedDiv");
         var wonDiv = document.getElementById("wonDiv");
@@ -42772,13 +42954,17 @@ window.App = {
 
         var guessingOpen = roundInfo.state == 0 && roundInfo.ticketCount < roundInfo.ticketCountLimit ;
         var revealStart = roundInfo.state == 0 && roundInfo.ticketCount == roundInfo.ticketCountLimit;
-        var revealOpen = roundInfo.state == 1 && roundInfo.revealedCount < roundInfo.ticketCount;
+        var revealRunning = roundInfo.state == 1 && roundInfo.revealedCount < roundInfo.ticketCount;
         var revealOverNotAllRevealed = roundInfo.state == 1 && roundInfo.revealedCount !== roundInfo.ticketCount &&
                roundInfo.revealPeriodEnds <  Date.now() /1000 ;
         var revealOverAllRevealed = roundInfo.state == 1 && roundInfo.revealedCount == roundInfo.ticketCount;
         guessDiv.style.display =  guessingOpen ? "inline" : "none";
-        revealStartDiv.style.display =  revealStart ? "inline" : "none";
-        revealDiv.style.display = revealOpen ? "inline" : "none";
+
+        revealFirstDiv.style.display =  revealStart ? "inline" : "none";
+        revealRunningDiv.style.display =  revealRunning ? "inline" : "none";
+        revealDiv.style.display = revealStart || revealRunning ? "inline" : "none";
+        revealStartOnlyDiv.style.display = revealStart ? "inline" : "none";
+
         revealOverDiv.style.display = revealOverNotAllRevealed ? "inline" : "none";
         revealOverAllRevealedDiv.style.display = revealOverAllRevealed ? "inline" : "none";
         wonDiv.style.display = roundInfo.state == 2 ? "inline" : "none";
@@ -42813,7 +42999,6 @@ window.App = {
 
     gameInstance.getRoundInfo()
     .then( roundRes => {
-        console.log("gameInstance.address", gameInstance.address);
         roundInfo = self.parseRoundInfo(roundRes);
         salt = "0x" + self.toHexString( __WEBPACK_IMPORTED_MODULE_5_secure_random_lib_secure_random_js___default()(32, {type: 'Array'}));
         return gameInstance.sealBetForAddress(account.toString(), guess, salt);
@@ -42872,7 +43057,8 @@ window.App = {
 
         // TODO: first reveal ca. 167000 then 11700 or 770000 ...
         web3.eth.estimateGas( {from: account, data: gameInstance.revealBet.getData }, function( error, res) {
-            var gasEstimate = res + 120000;
+            var gasEstimate = res + 140000;
+            console.log (gasEstimate);
             gameInstance.revealBet(ticket, guess, salt, {from: account, gas: gasEstimate})
             .then( tx => {
                 self.setStatus("<font color='green'>Bet revealed</font>" );
@@ -42960,12 +43146,10 @@ window.App = {
 
         //web3.eth.estimateGas( {from: account, data: lupiManagerInstance.createGame.getData }) + 10000;
         var gasEstimate = 1200000;
-        console.log("createGame() requiredBetAmount:", requiredBetAmount,
-         "ticketCountLimit:", ticketCountLimit, "revealPeriodLength:", revealPeriodLength, "feePt:", feePt);
         lupiManagerInstance.createGame(requiredBetAmount, ticketCountLimit, revealPeriodLength, feePt,
                  {from: account, gas: gasEstimate})
         .then( tx => {
-            self.setStatus("<font color='green'>Game created. Idx: " + tx.logs[1].args.gameIdx
+            self.setStatus("<font color='green'>Game created. Idx: " + tx.logs[2].args.gameIdx
             + " address: " + tx.logs[1].args.gameAddress + " </font>" );
             self.refreshUI();
         }).catch(function(e) {
