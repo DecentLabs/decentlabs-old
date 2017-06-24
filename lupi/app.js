@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 176);
+/******/ 	return __webpack_require__(__webpack_require__.s = 177);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1899,7 +1899,7 @@ function loadLocale(name) {
             module && module.exports) {
         try {
             oldLocale = globalLocale._abbr;
-            __webpack_require__(208)("./" + name);
+            __webpack_require__(209)("./" + name);
             // because defineLocale currently also sets the global locale, we
             // want to undo that for lazy loaded locales
             getSetGlobalLocale(oldLocale);
@@ -13134,9 +13134,9 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*! bignumber.js v2.0.7 https://github.com/Mik
 
 
 
-var base64 = __webpack_require__(177)
-var ieee754 = __webpack_require__(204)
-var isArray = __webpack_require__(206)
+var base64 = __webpack_require__(178)
+var ieee754 = __webpack_require__(205)
+var isArray = __webpack_require__(207)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -19982,15 +19982,15 @@ module.exports = function(module) {
 
 var f = __webpack_require__(5);
 
-var SolidityTypeAddress = __webpack_require__(222);
-var SolidityTypeBool = __webpack_require__(223);
-var SolidityTypeInt = __webpack_require__(226);
-var SolidityTypeUInt = __webpack_require__(229);
-var SolidityTypeDynamicBytes = __webpack_require__(225);
-var SolidityTypeString = __webpack_require__(228);
-var SolidityTypeReal = __webpack_require__(227);
-var SolidityTypeUReal = __webpack_require__(230);
-var SolidityTypeBytes = __webpack_require__(224);
+var SolidityTypeAddress = __webpack_require__(223);
+var SolidityTypeBool = __webpack_require__(224);
+var SolidityTypeInt = __webpack_require__(227);
+var SolidityTypeUInt = __webpack_require__(230);
+var SolidityTypeDynamicBytes = __webpack_require__(226);
+var SolidityTypeString = __webpack_require__(229);
+var SolidityTypeReal = __webpack_require__(228);
+var SolidityTypeUReal = __webpack_require__(231);
+var SolidityTypeBytes = __webpack_require__(225);
 
 /**
  * SolidityCoder prototype should be used to encode/decode solidity params of any type
@@ -20248,15 +20248,15 @@ module.exports = coder;
 
 var f = __webpack_require__(6);
 
-var SolidityTypeAddress = __webpack_require__(254);
-var SolidityTypeBool = __webpack_require__(255);
-var SolidityTypeInt = __webpack_require__(258);
-var SolidityTypeUInt = __webpack_require__(261);
-var SolidityTypeDynamicBytes = __webpack_require__(257);
-var SolidityTypeString = __webpack_require__(260);
-var SolidityTypeReal = __webpack_require__(259);
-var SolidityTypeUReal = __webpack_require__(262);
-var SolidityTypeBytes = __webpack_require__(256);
+var SolidityTypeAddress = __webpack_require__(255);
+var SolidityTypeBool = __webpack_require__(256);
+var SolidityTypeInt = __webpack_require__(259);
+var SolidityTypeUInt = __webpack_require__(262);
+var SolidityTypeDynamicBytes = __webpack_require__(258);
+var SolidityTypeString = __webpack_require__(261);
+var SolidityTypeReal = __webpack_require__(260);
+var SolidityTypeUReal = __webpack_require__(263);
+var SolidityTypeBytes = __webpack_require__(257);
 
 var isDynamic = function (solidityType, type) {
    return solidityType.isDynamicType(type) ||
@@ -20493,7 +20493,7 @@ module.exports = coder;
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Web3 = __webpack_require__(265);
+var Web3 = __webpack_require__(266);
 
 // dont override global variable
 if (typeof window !== 'undefined' && typeof window.Web3 === 'undefined') {
@@ -23944,7 +23944,7 @@ module.exports = Web3;
 ;(function (root, factory, undef) {
 	if (true) {
 		// CommonJS
-		module.exports = exports = factory(__webpack_require__(1), __webpack_require__(24), __webpack_require__(181), __webpack_require__(179), __webpack_require__(12), __webpack_require__(14), __webpack_require__(37), __webpack_require__(44), __webpack_require__(197), __webpack_require__(45), __webpack_require__(198), __webpack_require__(38), __webpack_require__(196), __webpack_require__(36), __webpack_require__(192), __webpack_require__(13), __webpack_require__(2), __webpack_require__(182), __webpack_require__(184), __webpack_require__(183), __webpack_require__(186), __webpack_require__(185), __webpack_require__(187), __webpack_require__(188), __webpack_require__(189), __webpack_require__(191), __webpack_require__(190), __webpack_require__(180), __webpack_require__(178), __webpack_require__(199), __webpack_require__(195), __webpack_require__(194), __webpack_require__(193));
+		module.exports = exports = factory(__webpack_require__(1), __webpack_require__(24), __webpack_require__(182), __webpack_require__(180), __webpack_require__(12), __webpack_require__(14), __webpack_require__(37), __webpack_require__(44), __webpack_require__(198), __webpack_require__(45), __webpack_require__(199), __webpack_require__(38), __webpack_require__(197), __webpack_require__(36), __webpack_require__(193), __webpack_require__(13), __webpack_require__(2), __webpack_require__(183), __webpack_require__(185), __webpack_require__(184), __webpack_require__(187), __webpack_require__(186), __webpack_require__(188), __webpack_require__(189), __webpack_require__(190), __webpack_require__(192), __webpack_require__(191), __webpack_require__(181), __webpack_require__(179), __webpack_require__(200), __webpack_require__(196), __webpack_require__(195), __webpack_require__(194));
 	}
 	else if (typeof define === "function" && define.amd) {
 		// AMD
@@ -40052,10 +40052,82 @@ module.exports = {
 			"links": {},
 			"address": "0xd7177641cd6388c540d7082b4958abad8661ce3a",
 			"updated_at": 1498240841025
+		},
+		"1498242808773": {
+			"events": {
+				"0x34f5f1c0de0c5064c900b95aca75740789fce2c778343bcfb333e45219aa8989": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "ticketId",
+							"type": "uint256"
+						}
+					],
+					"name": "e_BetPlaced",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": false,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0x750dc6365cd4e62e0322e97ad3e31019d0f63094",
+			"updated_at": 1498243068939
+		},
+		"1498245511336": {
+			"events": {
+				"0x34f5f1c0de0c5064c900b95aca75740789fce2c778343bcfb333e45219aa8989": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "ticketId",
+							"type": "uint256"
+						}
+					],
+					"name": "e_BetPlaced",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": false,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0x750dc6365cd4e62e0322e97ad3e31019d0f63094",
+			"updated_at": 1498245515267
 		}
 	},
 	"schema_version": "0.0.5",
-	"updated_at": 1498240841025
+	"updated_at": 1498245515267
 };
 
 /***/ }),
@@ -41222,10 +41294,116 @@ module.exports = {
 			"links": {},
 			"address": "0x2fb7349d5097a5c6d22dc4e9909346ebd37ccd92",
 			"updated_at": 1498240841026
+		},
+		"1498242808773": {
+			"events": {
+				"0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "gameIdx",
+							"type": "uint256"
+						},
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameAdded",
+					"type": "event"
+				},
+				"0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameCreated",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": false,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0x1578c4406b6a8808bae0945036a8896ede3c5de3",
+			"updated_at": 1498243068936
+		},
+		"1498245511336": {
+			"events": {
+				"0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "gameIdx",
+							"type": "uint256"
+						},
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameAdded",
+					"type": "event"
+				},
+				"0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameCreated",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": false,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0x1578c4406b6a8808bae0945036a8896ede3c5de3",
+			"updated_at": 1498245515270
 		}
 	},
 	"schema_version": "0.0.5",
-	"updated_at": 1498240841026
+	"updated_at": 1498245515270
 };
 
 /***/ }),
@@ -42604,6 +42782,201 @@ function(module) {
 /* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var __WEBPACK_AMD_DEFINE_RESULT__;/* FileSaver.js
+ * A saveAs() FileSaver implementation.
+ * 1.3.2
+ * 2016-06-16 18:25:19
+ *
+ * By Eli Grey, http://eligrey.com
+ * License: MIT
+ *   See https://github.com/eligrey/FileSaver.js/blob/master/LICENSE.md
+ */
+
+/*global self */
+/*jslint bitwise: true, indent: 4, laxbreak: true, laxcomma: true, smarttabs: true, plusplus: true */
+
+/*! @source http://purl.eligrey.com/github/FileSaver.js/blob/master/FileSaver.js */
+
+var saveAs = saveAs || (function(view) {
+	"use strict";
+	// IE <10 is explicitly unsupported
+	if (typeof view === "undefined" || typeof navigator !== "undefined" && /MSIE [1-9]\./.test(navigator.userAgent)) {
+		return;
+	}
+	var
+		  doc = view.document
+		  // only get URL when necessary in case Blob.js hasn't overridden it yet
+		, get_URL = function() {
+			return view.URL || view.webkitURL || view;
+		}
+		, save_link = doc.createElementNS("http://www.w3.org/1999/xhtml", "a")
+		, can_use_save_link = "download" in save_link
+		, click = function(node) {
+			var event = new MouseEvent("click");
+			node.dispatchEvent(event);
+		}
+		, is_safari = /constructor/i.test(view.HTMLElement) || view.safari
+		, is_chrome_ios =/CriOS\/[\d]+/.test(navigator.userAgent)
+		, throw_outside = function(ex) {
+			(view.setImmediate || view.setTimeout)(function() {
+				throw ex;
+			}, 0);
+		}
+		, force_saveable_type = "application/octet-stream"
+		// the Blob API is fundamentally broken as there is no "downloadfinished" event to subscribe to
+		, arbitrary_revoke_timeout = 1000 * 40 // in ms
+		, revoke = function(file) {
+			var revoker = function() {
+				if (typeof file === "string") { // file is an object URL
+					get_URL().revokeObjectURL(file);
+				} else { // file is a File
+					file.remove();
+				}
+			};
+			setTimeout(revoker, arbitrary_revoke_timeout);
+		}
+		, dispatch = function(filesaver, event_types, event) {
+			event_types = [].concat(event_types);
+			var i = event_types.length;
+			while (i--) {
+				var listener = filesaver["on" + event_types[i]];
+				if (typeof listener === "function") {
+					try {
+						listener.call(filesaver, event || filesaver);
+					} catch (ex) {
+						throw_outside(ex);
+					}
+				}
+			}
+		}
+		, auto_bom = function(blob) {
+			// prepend BOM for UTF-8 XML and text/* types (including HTML)
+			// note: your browser will automatically convert UTF-16 U+FEFF to EF BB BF
+			if (/^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(blob.type)) {
+				return new Blob([String.fromCharCode(0xFEFF), blob], {type: blob.type});
+			}
+			return blob;
+		}
+		, FileSaver = function(blob, name, no_auto_bom) {
+			if (!no_auto_bom) {
+				blob = auto_bom(blob);
+			}
+			// First try a.download, then web filesystem, then object URLs
+			var
+				  filesaver = this
+				, type = blob.type
+				, force = type === force_saveable_type
+				, object_url
+				, dispatch_all = function() {
+					dispatch(filesaver, "writestart progress write writeend".split(" "));
+				}
+				// on any filesys errors revert to saving with object URLs
+				, fs_error = function() {
+					if ((is_chrome_ios || (force && is_safari)) && view.FileReader) {
+						// Safari doesn't allow downloading of blob urls
+						var reader = new FileReader();
+						reader.onloadend = function() {
+							var url = is_chrome_ios ? reader.result : reader.result.replace(/^data:[^;]*;/, 'data:attachment/file;');
+							var popup = view.open(url, '_blank');
+							if(!popup) view.location.href = url;
+							url=undefined; // release reference before dispatching
+							filesaver.readyState = filesaver.DONE;
+							dispatch_all();
+						};
+						reader.readAsDataURL(blob);
+						filesaver.readyState = filesaver.INIT;
+						return;
+					}
+					// don't create more object URLs than needed
+					if (!object_url) {
+						object_url = get_URL().createObjectURL(blob);
+					}
+					if (force) {
+						view.location.href = object_url;
+					} else {
+						var opened = view.open(object_url, "_blank");
+						if (!opened) {
+							// Apple does not allow window.open, see https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide/WorkingwithWindowsandTabs/WorkingwithWindowsandTabs.html
+							view.location.href = object_url;
+						}
+					}
+					filesaver.readyState = filesaver.DONE;
+					dispatch_all();
+					revoke(object_url);
+				}
+			;
+			filesaver.readyState = filesaver.INIT;
+
+			if (can_use_save_link) {
+				object_url = get_URL().createObjectURL(blob);
+				setTimeout(function() {
+					save_link.href = object_url;
+					save_link.download = name;
+					click(save_link);
+					dispatch_all();
+					revoke(object_url);
+					filesaver.readyState = filesaver.DONE;
+				});
+				return;
+			}
+
+			fs_error();
+		}
+		, FS_proto = FileSaver.prototype
+		, saveAs = function(blob, name, no_auto_bom) {
+			return new FileSaver(blob, name || blob.name || "download", no_auto_bom);
+		}
+	;
+	// IE 10+ (native saveAs)
+	if (typeof navigator !== "undefined" && navigator.msSaveOrOpenBlob) {
+		return function(blob, name, no_auto_bom) {
+			name = name || blob.name || "download";
+
+			if (!no_auto_bom) {
+				blob = auto_bom(blob);
+			}
+			return navigator.msSaveOrOpenBlob(blob, name);
+		};
+	}
+
+	FS_proto.abort = function(){};
+	FS_proto.readyState = FS_proto.INIT = 0;
+	FS_proto.WRITING = 1;
+	FS_proto.DONE = 2;
+
+	FS_proto.error =
+	FS_proto.onwritestart =
+	FS_proto.onprogress =
+	FS_proto.onwrite =
+	FS_proto.onabort =
+	FS_proto.onerror =
+	FS_proto.onwriteend =
+		null;
+
+	return saveAs;
+}(
+	   typeof self !== "undefined" && self
+	|| typeof window !== "undefined" && window
+	|| this.content
+));
+// `self` is undefined in Firefox for Android content script context
+// while `this` is nsIContentFrameMessageManager
+// with an attribute `content` that corresponds to the window
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports.saveAs = saveAs;
+} else if (("function" !== "undefined" && __webpack_require__(285) !== null) && (__webpack_require__(286) !== null)) {
+  !(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
+    return saveAs;
+  }.call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}
+
+
+/***/ }),
+/* 174 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /* WEBPACK VAR INJECTION */(function(process, Buffer) {var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(globals){
 'use strict'
 
@@ -42634,7 +43007,7 @@ function secureRandom(count, options) {
 }
 
 function nodeRandom(count, options) {
-  var crypto = __webpack_require__(285)
+  var crypto = __webpack_require__(288)
   var buf = crypto.randomBytes(count)
 
   switch (options.type) {
@@ -42687,16 +43060,16 @@ secureRandom.randomBuffer = function(byteCount) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(161), __webpack_require__(23).Buffer))
 
 /***/ }),
-/* 174 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(200);
+var content = __webpack_require__(201);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(211)(content, {});
+var update = __webpack_require__(212)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -42713,11 +43086,11 @@ if(false) {
 }
 
 /***/ }),
-/* 175 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Schema = __webpack_require__(213);
-var Contract = __webpack_require__(217);
+var Schema = __webpack_require__(214);
+var Contract = __webpack_require__(218);
 
 var contract = function(options) {
   options = Schema.normalizeOptions(options);
@@ -42783,22 +43156,22 @@ if (typeof window !== "undefined") {
 
 
 /***/ }),
-/* 176 */
+/* 177 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stylesheets_app_css__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stylesheets_app_css__ = __webpack_require__(175);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stylesheets_app_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__stylesheets_app_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_web3__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_web3___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_web3__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_truffle_contract__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_truffle_contract__ = __webpack_require__(176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_truffle_contract___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_truffle_contract__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__build_contracts_Lupi_json__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__build_contracts_Lupi_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__build_contracts_Lupi_json__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__build_contracts_LupiManager_json__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__build_contracts_LupiManager_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__build_contracts_LupiManager_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_secure_random_lib_secure_random_js__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_secure_random_lib_secure_random_js__ = __webpack_require__(174);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_secure_random_lib_secure_random_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_secure_random_lib_secure_random_js__);
 // Import the page's CSS. Webpack will know what to do with it.
 
@@ -42812,6 +43185,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 var moment = __webpack_require__(0);
 var countdown = __webpack_require__(172);
+var FileSaver = __webpack_require__(173);
 
 var Lupi = __WEBPACK_IMPORTED_MODULE_2_truffle_contract___default()(__WEBPACK_IMPORTED_MODULE_3__build_contracts_Lupi_json___default.a);
 var lupiManager = __WEBPACK_IMPORTED_MODULE_2_truffle_contract___default()(__WEBPACK_IMPORTED_MODULE_4__build_contracts_LupiManager_json___default.a);
@@ -42820,213 +43194,359 @@ var gameInstance, lupiManagerInstance;
 
 // TODO: add accountchange event to do refreshUI (for Metamask users)
 window.App = {
-  start: function() {
-    var self = this;
+    start: function() {
+        var self = this;
 
-    lupiManager.setProvider(web3.currentProvider);
-    Lupi.setProvider(web3.currentProvider);
+        lupiManager.setProvider(web3.currentProvider);
+        Lupi.setProvider(web3.currentProvider);
 
-    web3.eth.getAccounts(function(err, accs) {
-        if (err != null) {
-            self.setStatus("<font color='red'>There was an error fetching your Ethereum accounts.</red>");
-            console.error("Error getting account list: ", err);
-            document.getElementById("connectHelpDiv").style.display = "block";
-            return;
-        }
-
-        if (accs.length == 0) {
-            self.setStatus("<font color='red'>Couldn't get any accounts! Make sure your Ethereum client is configured correctly.</red>");
-            console.error("Received no account in account list");
-            document.getElementById("connectHelpDiv").style.display = "block";
-            return;
-        }
-
-        accounts = accs;
-        account = accounts[0];
-
-        lupiManager.deployed()
-        .then( res => {
-            lupiManagerInstance = res;
-            return lupiManagerInstance.owner();
-        }).then( res => {
-            if (res ==  "0x" ) {
-                throw("lupiManager at " + lupiManager.address + " returned 0x owner() - not deployed?");
+        web3.eth.getAccounts(function(err, accs) {
+            if (err != null) {
+                self.setStatus("<font color='red'>There was an error fetching your Ethereum accounts.</red>");
+                console.error("Error getting account list: ", err);
+                document.getElementById("connectHelpDiv").style.display = "block";
+                return;
             }
-            self.refreshUI();
-        }).catch( error => {
-            console.error("failed to connect LupiManager or Lupi", error);
-            App.setStatus("<font color='red'>Can't find any game on Ethereum network. Are you on testnet?</font>");
-            document.getElementById("connectHelpDiv").style.display = "block";
-        }); // lupiManager.deployed()
-    }); // getAccounts
-  },
 
-  setStatus: function(message) {
-    var status = document.getElementById("status");
-    status.innerHTML = message;
-  },
-
-  toggleDebugInfo: function(message) {
-    var ele = document.getElementById("massageDiv");
-	var text = document.getElementById("toggleDebugInfoText");
-	if(ele.style.display == "block") {
-    		ele.style.display = "none";
-		text.innerHTML = "Show debug info >>";
-  	}
-	else {
-		ele.style.display = "block";
-		text.innerHTML = "Hide debug info <<";
-	}
-  },
-
-  refreshUI: function() {
-    var self = this;
-    document.getElementById("accountAddress").innerHTML = account;
-    document.getElementById("lupiManagerAddress").innerHTML = lupiManagerInstance.address;
-
-    web3.eth.getBalance(account, function(error, res) {
-        if (error) {
-            self.setStatus("<font color='red'>Error getting account balance; see log.</font>");
-            console.error("refreshUI().getBalance(account) error", error);
-        } else {
-            document.getElementById("accountBalance").innerHTML = web3.fromWei(res).valueOf();
-        }
-    }); // getBalance(account)
-
-    lupiManagerInstance.getGamesCount()
-    .then( res => {
-        // TODO: handle if no games or game address is 0x (same way as on App.start)
-        var gamesCount = res.toNumber();
-        var gameIdx = gamesCount - 1;
-        document.getElementById("gameIdx").innerHTML = gameIdx;
-        document.getElementById("gamesCount").innerHTML = gamesCount;
-
-        return lupiManagerInstance.games(gameIdx);
-    }).then( res => {
-        gameInstance = Lupi.at(res);
-        document.getElementById("contractAddress").innerHTML = gameInstance.address;
-
-        return lupiManagerInstance.owner();
-    }).then( lupiManagerInstanceOwner => {
-        document.getElementById("lupiManagerOwner").innerHTML = lupiManagerInstanceOwner;
-
-        return gameInstance.owner();
-    }).then( gameInstanceOwner => {
-        document.getElementById("contractOwner").innerHTML = gameInstanceOwner;
-
-        web3.eth.getBalance(gameInstance.address, function(error, res) {
-            if (error) {
-                self.setStatus("<font color='red'>Error getting contract balance; see log.</font>");
-                console.error("refreshUI().getBalance(gameInstance.address) error", error);
-            } else {
-                document.getElementById("contractBalance").innerHTML = web3.fromWei(res).valueOf();
+            if (accs.length == 0) {
+                self.setStatus("<font color='red'>Couldn't get any accounts! Make sure your Ethereum client is configured correctly.</red>");
+                console.error("Received no account in account list");
+                document.getElementById("connectHelpDiv").style.display = "block";
+                return;
             }
-        }); // getBalance(gameInstance)
 
-        return gameInstance.getRoundInfo();
-    }).then( roundRes => {
-        var roundInfo = self.parseRoundInfo(roundRes);
-        document.getElementById("winnablePotAmount").innerHTML = web3.fromWei(roundInfo.winnablePotAmount);
-        document.getElementById("requiredBetAmount").innerHTML = web3.fromWei(roundInfo.requiredBetAmount);
-        document.getElementById("ticketCount").innerHTML = roundInfo.ticketCount;
-        document.getElementById("revealedCount").innerHTML = roundInfo.revealedCount;
-        document.getElementById("unRevealedCount").innerHTML = roundInfo.ticketCount - roundInfo.revealedCount;
-        document.getElementById("ticketCountLimit1").innerHTML = roundInfo.ticketCountLimit;
-        document.getElementById("ticketCountLimit2").innerHTML = roundInfo.ticketCountLimit;
+            accounts = accs;
+            account = accounts[0];
 
-        document.getElementById("revealPeriodLength1").innerHTML  = countdown(0, roundInfo.revealPeriodLength*1000).toString();
-        document.getElementById("revealPeriodLength2").innerHTML  = countdown(0, roundInfo.revealPeriodLength*1000).toString();
-        document.getElementById("revealPeriodEnds").innerHTML = moment.unix(roundInfo.revealPeriodEnds).format("DD/MMM/YYYY HH:mm:ss");
-        document.getElementById("roundInfoDebug").innerHTML = JSON.stringify(roundInfo,null, 4);
-        document.getElementById("winningNumber").innerHTML = roundInfo.winningNumber;
-        document.getElementById("winningAddress").innerHTML = roundInfo.winningAddress;
-
-        var guessDiv = document.getElementById("guessDiv");
-
-        var revealDiv = document.getElementById("revealDiv");
-        var revealFirstDiv = document.getElementById("revealFirstDiv");
-        var revealRunningDiv = document.getElementById("revealRunningDiv");
-        var revealStartOnlyDiv = document.getElementById("revealStartOnlyDiv");
-        var revealOverDiv = document.getElementById("revealOverDiv");
-        var revealOverAllRevealedDiv = document.getElementById("revealOverAllRevealedDiv");
-        var wonDiv = document.getElementById("wonDiv");
-        var tiedDiv = document.getElementById("tiedDiv");
-
-        var guessingOpen = roundInfo.state == 0 && roundInfo.ticketCount < roundInfo.ticketCountLimit ;
-        var revealStart = roundInfo.state == 0 && roundInfo.ticketCount == roundInfo.ticketCountLimit;
-        var revealRunning = roundInfo.state == 1 && roundInfo.revealedCount < roundInfo.ticketCount;
-        var revealOverNotAllRevealed = roundInfo.state == 1 && roundInfo.revealedCount !== roundInfo.ticketCount &&
-               roundInfo.revealPeriodEnds <  Date.now() /1000 ;
-        var revealOverAllRevealed = roundInfo.state == 1 && roundInfo.revealedCount == roundInfo.ticketCount;
-        guessDiv.style.display =  guessingOpen ? "inline" : "none";
-
-        revealFirstDiv.style.display =  revealStart ? "inline" : "none";
-        revealRunningDiv.style.display =  revealRunning ? "inline" : "none";
-        revealDiv.style.display = revealStart || revealRunning ? "inline" : "none";
-        revealStartOnlyDiv.style.display = revealStart ? "inline" : "none";
-
-        revealOverDiv.style.display = revealOverNotAllRevealed ? "inline" : "none";
-        revealOverAllRevealedDiv.style.display = revealOverAllRevealed ? "inline" : "none";
-        wonDiv.style.display = roundInfo.state == 2 ? "inline" : "none";
-        tiedDiv.style.display =  roundInfo.state == 3 ? "inline" : "none";
-
-        var winnerAlreadyPayedDiv = document.getElementById("winnerAlreadyPayedDiv");
-        var payWinnerDiv = document.getElementById("payWinnerDiv");
-        if (roundInfo.state == 2  ) {
-            gameInstance.tickets(roundInfo.winningTicket)
+            lupiManager.deployed()
             .then( res => {
-                var deposit = res[1].toNumber();
-                winnerAlreadyPayedDiv.style.display = deposit == 0 ? "inline" : "none";
-                payWinnerDiv.style.display = deposit > 0 ? "inline" : "none";
-            });
+                lupiManagerInstance = res;
+                return lupiManagerInstance.owner();
+            }).then( res => {
+                if (res ==  "0x" ) {
+                    throw("lupiManager at " + lupiManager.address + " returned 0x owner() - not deployed?");
+                }
+                self.refreshUI();
+            }).catch( error => {
+                console.error("failed to connect LupiManager or Lupi", error);
+                App.setStatus("<font color='red'>Can't find any game on Ethereum network. Are you on testnet?</font>");
+                document.getElementById("connectHelpDiv").style.display = "block";
+            }); // lupiManager.deployed()
+        }); // getAccounts
+    }, // window.start
+
+    setStatus: function(message) {
+        var status = document.getElementById("status");
+        status.innerHTML = "<br>" + message;
+    },
+
+    toggleDebugInfo: function(message) {
+        var ele = document.getElementById("massageDiv");
+        var text = document.getElementById("toggleDebugInfoText");
+        if(ele.style.display == "block") {
+        		ele.style.display = "none";
+        	text.innerHTML = "Show debug info >>";
+        	}
+        else {
+        	ele.style.display = "block";
+        	text.innerHTML = "Hide debug info <<";
+        }
+    },
+
+    toggleManualReveal: function(message) {
+        var ele = document.getElementById("revealManualDiv");
+        var text = document.getElementById("toggleManualRevealText");
+        if(ele.style.display == "block") {
+              ele.style.display = "none";
+              text.innerHTML = "Type in ticket info >>";
+          }
+        else {
+          ele.style.display = "block";
+          text.innerHTML = "Hide manual ticket reveal fields <<";
+        }
+    },
+
+    refreshUI: function() {
+        var self = this;
+        if (typeof(Storage) !== "undefined" && localStorage.length > 0) {
+            document.getElementById("backupDiv").style.display = "block";
+        }
+        document.getElementById("accountAddress").innerHTML = account;
+        if ( document.getElementById("accountInput").value == "" ) {
+            document.getElementById("accountInput").value = account;
+        }
+        document.getElementById("lupiManagerAddress").innerHTML = lupiManagerInstance.address;
+
+        web3.eth.getBalance(account, function(error, res) {
+            if (error) {
+                self.setStatus("<font color='red'>Error getting account balance; see log.</font>");
+                console.error("refreshUI().getBalance(account) error", error);
+            } else {
+                document.getElementById("accountBalance").innerHTML = web3.fromWei(res).valueOf();
+            }
+        }); // getBalance(account)
+
+        lupiManagerInstance.getGamesCount()
+        .then( res => {
+            // TODO: handle if no games or game address is 0x (same way as on App.start)
+            var gamesCount = res.toNumber();
+            var gameIdx = gamesCount - 1;
+            document.getElementById("gameIdx").innerHTML = gameIdx;
+            document.getElementById("gamesCount").innerHTML = gamesCount;
+
+            return lupiManagerInstance.games(gameIdx);
+        }).then( res => {
+            gameInstance = Lupi.at(res);
+            document.getElementById("contractAddress").innerHTML = gameInstance.address;
+
+            return lupiManagerInstance.owner();
+        }).then( lupiManagerInstanceOwner => {
+            document.getElementById("lupiManagerOwner").innerHTML = lupiManagerInstanceOwner;
+
+            return gameInstance.owner();
+        }).then( gameInstanceOwner => {
+            document.getElementById("contractOwner").innerHTML = gameInstanceOwner;
+
+            web3.eth.getBalance(gameInstance.address, function(error, res) {
+                if (error) {
+                    self.setStatus("<font color='red'>Error getting contract balance; see log.</font>");
+                    console.error("refreshUI().getBalance(gameInstance.address) error", error);
+                } else {
+                    document.getElementById("contractBalance").innerHTML = web3.fromWei(res).valueOf();
+                }
+            }); // getBalance(gameInstance)
+
+            return gameInstance.getRoundInfo();
+        }).then( roundRes => {
+            var roundInfo = new App.RoundInfo(roundRes);
+            document.getElementById("winnablePotAmount").innerHTML = web3.fromWei(roundInfo.winnablePotAmount);
+            document.getElementById("requiredBetAmount").innerHTML = web3.fromWei(roundInfo.requiredBetAmount);
+            document.getElementById("ticketCount").innerHTML = roundInfo.ticketCount;
+            document.getElementById("revealedCount").innerHTML = roundInfo.revealedCount;
+            document.getElementById("unRevealedCount").innerHTML = roundInfo.ticketCount - roundInfo.revealedCount;
+            document.getElementById("ticketCountLimit1").innerHTML = roundInfo.ticketCountLimit;
+            document.getElementById("ticketCountLimit2").innerHTML = roundInfo.ticketCountLimit;
+
+            document.getElementById("revealPeriodLength1").innerHTML  = countdown(0, roundInfo.revealPeriodLength*1000).toString();
+            document.getElementById("revealPeriodLength2").innerHTML  = countdown(0, roundInfo.revealPeriodLength*1000).toString();
+            document.getElementById("revealPeriodEnds").innerHTML = moment.unix(roundInfo.revealPeriodEnds).format("DD/MMM/YYYY HH:mm:ss");
+            document.getElementById("roundInfoDebug").innerHTML = JSON.stringify(roundInfo,null, 4);
+            document.getElementById("winningNumber").innerHTML = roundInfo.winningNumber;
+            document.getElementById("winningAddress").innerHTML = roundInfo.winningAddress;
+
+            var guessDiv = document.getElementById("guessDiv");
+
+            var revealDiv = document.getElementById("revealDiv");
+            var revealFirstDiv = document.getElementById("revealFirstDiv");
+            var revealRunningDiv = document.getElementById("revealRunningDiv");
+            var revealStartOnlyDiv = document.getElementById("revealStartOnlyDiv");
+            var revealOverDiv = document.getElementById("revealOverDiv");
+            var revealOverAllRevealedDiv = document.getElementById("revealOverAllRevealedDiv");
+            var wonDiv = document.getElementById("wonDiv");
+            var tiedDiv = document.getElementById("tiedDiv");
+
+            var guessingOpen = roundInfo.state == 0 && roundInfo.ticketCount < roundInfo.ticketCountLimit ;
+            var revealStart = roundInfo.state == 0 && roundInfo.ticketCount == roundInfo.ticketCountLimit;
+            var revealRunning = roundInfo.state == 1 && roundInfo.revealedCount < roundInfo.ticketCount;
+            var revealOverNotAllRevealed = roundInfo.state == 1 && roundInfo.revealedCount !== roundInfo.ticketCount &&
+                   roundInfo.revealPeriodEnds <  Date.now() /1000 ;
+            var revealOverAllRevealed = roundInfo.state == 1 && roundInfo.revealedCount == roundInfo.ticketCount;
+            guessDiv.style.display =  guessingOpen ? "inline" : "none";
+
+            revealFirstDiv.style.display =  revealStart ? "inline" : "none";
+            revealRunningDiv.style.display =  revealRunning ? "inline" : "none";
+            revealDiv.style.display =  revealStart || revealRunning ? "inline" : "none";
+
+            if( revealStart || revealRunning ) {
+                var ticketsListDiv = document.getElementById("ticketsListDiv");
+                while (ticketsListDiv.hasChildNodes()) {
+                    ticketsListDiv.removeChild(ticketsListDiv.lastChild);
+                }
+                var tickets = JSON.parse( localStorage.getItem(gameInstance.address));
+                var revealedNode = document.createElement("div");
+                revealedNode.id = "revealedTicketsListDiv";
+                var revealNode = document.createElement("div");
+                revealNode.id = "revealTicketButtonsDiv";
+                var buttonNode;
+                for (var i=0; i < tickets.length; i++) {
+                    if (tickets[i].isRevealed) {
+                        //revealedNode.appendChild( document.createElement("br"));
+                        revealedNode.appendChild(  document.createTextNode("TicketId: " + tickets[i].ticketId
+                            + ", guess: " + tickets[i].guess + " | ") );
+                    } else {
+                        buttonNode = document.createElement("button");
+                        buttonNode.id = "revealButton" + i;
+                        buttonNode.value = "Reveal ticket " + tickets[i].ticketId;
+                        buttonNode.ticket = tickets[i];
+                        buttonNode.appendChild(document.createTextNode(buttonNode.value));
+
+                        buttonNode.addEventListener('click', function(){
+                            App.revealBet(gameInstance.address, this.ticket);
+                        });
+                        revealNode.appendChild(buttonNode);
+                        console.log(tickets[i].ticketId);
+                    }
+                } // for each ticket in store
+                ticketsListDiv.appendChild(revealNode);
+                ticketsListDiv.appendChild(document.createElement("br"));
+                ticketsListDiv.appendChild(document.createTextNode("Tickets you already revealed:"));
+                ticketsListDiv.appendChild(revealedNode);
+            }
+            revealStartOnlyDiv.style.display = revealStart ? "inline" : "none";
+
+            revealOverDiv.style.display = revealOverNotAllRevealed ? "inline" : "none";
+            revealOverAllRevealedDiv.style.display = revealOverAllRevealed ? "inline" : "none";
+            wonDiv.style.display = roundInfo.state == 2 ? "inline" : "none";
+            tiedDiv.style.display =  roundInfo.state == 3 ? "inline" : "none";
+
+            var winnerAlreadyPayedDiv = document.getElementById("winnerAlreadyPayedDiv");
+            var payWinnerDiv = document.getElementById("payWinnerDiv");
+            if (roundInfo.state == 2  ) {
+                gameInstance.tickets(roundInfo.winningTicket)
+                .then( res => {
+                    var deposit = res[1].toNumber();
+                    winnerAlreadyPayedDiv.style.display = deposit == 0 ? "inline" : "none";
+                    payWinnerDiv.style.display = deposit > 0 ? "inline" : "none";
+                });
+            } else {
+                winnerAlreadyPayedDiv.style.display =  "none";
+                payWinnerDiv.style.display = "none";
+            }
+
+        }).catch(function(e) {
+            console.error("refreshUI() error", e);
+            self.setStatus("<font color='red'>Error updating data; see log.</font>");
+        });
+    },
+
+    placeBet: function() {
+        var self = this;
+        self.setStatus("Initiating transaction... (please wait)");
+        var guess = parseInt(document.getElementById("guess").value);
+        var salt, ticketId, sealedBet;
+        var roundInfo;
+        // TODO: do disable for all submit not only for bets + add spinner/info to sign + do it nicer
+        var placeBetButton = document.getElementById("placeBetButton"); //
+        placeBetButton.disabled = true;
+
+        gameInstance.getRoundInfo()
+        .then( roundRes => {
+            roundInfo = new App.RoundInfo(roundRes);
+            salt = "0x" + self.toHexString( __WEBPACK_IMPORTED_MODULE_5_secure_random_lib_secure_random_js___default()(32, {type: 'Array'}));
+            return gameInstance.sealBetForAddress(account.toString(), guess, salt);
+        }).then( function(sealRes) {
+            sealedBet = sealRes;
+            web3.eth.estimateGas( {from: account, data: gameInstance.placeBet.getData}, function(error, res ) {
+                var gasEstimate = res + 50000;
+                gameInstance.placeBet(sealedBet, {from: account, value: roundInfo.requiredBetAmount, gas: gasEstimate})
+                .then(function( tx) {
+                    ticketId = tx.logs[0].args.ticketId.toNumber() ;
+                    var status = "<font color='green'>Successful guess.</font>"
+                    try {
+                        if (typeof(Storage) !== "undefined") {
+                            var ticket = new App.Ticket(ticketId, guess, salt, account, false);
+                            var ticketStore;
+                            ticketStore = JSON.parse( localStorage.getItem(gameInstance.address));
+                            if (ticketStore == null ) {
+                                ticketStore = new Array();
+                            }
+                            ticketStore.push(ticket);
+                            localStorage.setItem(gameInstance.address, JSON.stringify(ticketStore));
+
+                            status += "<br><strong>IMPORTANT: </strong>"
+                                    + "<a href='#self' onclick='App.exportTickets(); return false;'>"
+                                    + "Download your tickets " + "</a> for backup."
+                        } else {
+                            status +=
+                                    + "<br> Couldn't store your secret key locally. "
+                                    + "<br> <strong>IMPORTANT:</strong> Save this information to be able to reveal your bet:"
+                                    + "<br> Ticket id: " + ticketId
+                                    + "<br> Guess: " + guess
+                                    + "<br> Secret key: " +  salt
+                                    + "<br> Account: " + account.toString();
+                        }
+                    }
+                    catch( error) {
+                        status += "<br>Your bet was placed but failed to save it locally. Make sure you backup your ticket manually.";
+                        console.error("Placebet() save to localstorage", error);
+                        placeBetButton.disabled = false;
+                    }
+                    self.setStatus(status);
+                    self.refreshUI();
+                    placeBetButton.disabled = false;
+                }).catch(function(e) {
+                    console.error("placeBet() error", e);
+                    self.setStatus("<font color='red'>Error sending your guess; see log.</red>");
+                    placeBetButton.disabled = false;
+                }); // placeBet()
+            }); // estimateGas()
+        }).catch( e => {
+            console.error("App.placeBet error", e);
+            self.setStatus("<font color='red'>Error sending your guess; see log.</red>");
+            placeBetButton.disabled = false;
+        }); // getRoundInfo()
+
+    }, // placeBet()
+
+    exportTickets: function() {
+        var toSave = [JSON.stringify(localStorage, null, 2)];
+        var toSaveBlob = new Blob(toSave, {type: "data:application/json"})
+        FileSaver.saveAs(toSaveBlob, "TicketBackup"
+            + moment().format("YYYYMMDDHHmmss")
+            + ".json");
+    }, // downloadTickets
+
+
+    importTickets: function(filePath) {
+        var self = this;
+        var output = "", reader;
+
+        if (window.File && window.FileReader && window.FileList && window.Blob) {
+            reader = new FileReader();
         } else {
-            winnerAlreadyPayedDiv.style.display =  "none";
-            payWinnerDiv.style.display = "none";
+            alert('');
+            self.setStatus("<font color='red'>Can't restore tickets: the File APIs are not fully supported by your browser."
+                + "<br>Try again with an up to date browser or reveal your tickets by entering ticket info manually.</font> ");
+            return false;
         }
 
-    }).catch(function(e) {
-      console.error("refreshUI() error", e);
-      self.setStatus("<font color='red'>Error updating data; see log.</font>");
-    });
-  },
+        if(filePath.files && filePath.files[0]) {
+            reader.onload = function (e) {
+                output = e.target.result;
+                App.addImportedTickets(output);
+            };//end onload()
+            reader.readAsText(filePath.files[0]);
+        }//end if html5 filelist support
+        else if(ActiveXObject && filePath) { //fallback to IE 6-8 support via ActiveX
+            try {
+                reader = new ActiveXObject("Scripting.FileSystemObject");
+                var file = reader.OpenTextFile(filePath, 1); //ActiveX File Object
+                output = file.ReadAll(); //text contents of file
+                file.Close(); //close file "input stream"
+                App.addImportedTickets(output);
+            } catch (e) {
+                if (e.number == -2146827859) {
+                    alert('Unable to access local files due to browser security settings. ' +
+                     'To overcome this, go to Tools->Internet Options->Security->Custom Level. ' +
+                     'Find the setting for "Initialize and script ActiveX controls not marked as safe" and change it to "Enable" or "Prompt"');
+                }
+            }
+        }
+        else { //this is where you could fallback to Java Applet, Flash or similar
+            return false;
+        }
+        self.setStatus("<font color='green'>Successfully ticket import from "
+                + filePath.files[0].name + "</green>");
+        filePath.value = "";
+        return true;
+    }, // importTickets
 
-  placeBet: function() {
-    var self = this;
-    self.setStatus("Initiating transaction... (please wait)");
-    var guess = parseInt(document.getElementById("guess").value);
-    var salt, ticketId, sealedBet;
-    var roundInfo;
-
-    gameInstance.getRoundInfo()
-    .then( roundRes => {
-        roundInfo = self.parseRoundInfo(roundRes);
-        salt = "0x" + self.toHexString( __WEBPACK_IMPORTED_MODULE_5_secure_random_lib_secure_random_js___default()(32, {type: 'Array'}));
-        return gameInstance.sealBetForAddress(account.toString(), guess, salt);
-    }).then( function(sealRes) {
-        sealedBet = sealRes;
-        web3.eth.estimateGas( {from: account, data: gameInstance.placeBet.getData}, function(error, res ) {
-            var gasEstimate = res + 50000;
-            gameInstance.placeBet(sealedBet, {from: account, value: roundInfo.requiredBetAmount, gas: gasEstimate})
-            .then(function( tx) {
-                ticketId = tx.logs[0].args.ticketId.toNumber() ;
-                self.setStatus("<font color='green'>Successful guess.</font>"
-                        + "<br> <strong>IMPORTANT:</strong> Save this information to reveal your bet:"
-                        + "<br> Ticket id: " + ticketId
-                        + "<br> Guess: " + guess
-                        + "<br> Secret key: " +  salt
-                        + "<br> Account: " + account.toString());
-                self.refreshUI();
-            }).catch(function(e) {
-                console.error("placeBet() error", e);
-                self.setStatus("<font color='red'>Error sending your guess; see log.</red>");
-            }); // placeBet()
-        }); // estimateGas()
-    }).catch( e => {
-        console.error("App.placeBet error", e);
-        self.setStatus("<font color='red'>Error sending your guess; see log.</red>");
-    }); // getRoundInfo()
-
-  },
+    addImportedTickets: function (content) {
+        var data = JSON.parse(content);
+        Object.keys(data).forEach(function (k) {
+          localStorage.setItem(k, data[k]);
+        });
+    }, // addImportedTickets
 
     startRevealing: function() {
         var self = this;
@@ -43038,7 +43558,7 @@ window.App = {
             .then( tx => {
                 return gameInstance.getRoundInfo();
             }).then( roundRes => {
-                var roundInfo = self.parseRoundInfo(roundRes);
+                var roundInfo = new App.RoundInfo(roundRes);
                 self.setStatus("<font color='green'>Reveal period started.</green>");
                 self.refreshUI();
             }).catch(function(e) {
@@ -43048,19 +43568,42 @@ window.App = {
         }); // estimateGas()
     },
 
-    revealBet: function() {
+    manualRevealBet: function() {
         var self = this;
-        self.setStatus("Initiating transaction... (please wait)");
-        var ticket = parseInt(document.getElementById("ticketId").value);
+        var accountInput = parseInt(document.getElementById("accountInput").value);
+        var ticketId = parseInt(document.getElementById("ticketId").value);
         var guess = parseInt(document.getElementById("revealGuess").value);
         var salt = document.getElementById("salt").value;
+        var ticket = new App.Ticket(ticketId, guess, salt, accountInput);
+        App.revealBet(gameInstance.address, ticket);
+    },
+
+    revealBet: function( gameAddress, ticket) {
+        var self = this;
+        self.setStatus("Initiating transaction... (please wait)");
 
         // TODO: first reveal ca. 167000 then 11700 or 770000 ...
         web3.eth.estimateGas( {from: account, data: gameInstance.revealBet.getData }, function( error, res) {
             var gasEstimate = res + 140000;
-            console.log (gasEstimate);
-            gameInstance.revealBet(ticket, guess, salt, {from: account, gas: gasEstimate})
+            gameInstance.revealBetForAddress(ticket.account, ticket.ticketId, ticket.guess, ticket.salt, {from: account, gas: gasEstimate})
             .then( tx => {
+                // Successful reveal, update localeStorage
+                ticket.isRevealed = true;
+                var ticketStore;
+                ticketStore = JSON.parse( localStorage.getItem(gameInstance.address));
+                if (ticketStore == null ) {
+                    ticketStore = new Array();
+                    ticketStore.push(ticket);
+                } else {
+                    var t = ticketStore.find(x => x.ticketId === ticket.ticketId);
+                    if (typeof t == "undefined" ) {
+                        ticketStore.push(ticket);
+                    } else {
+                        var index = ticketStore.indexOf(t);
+                        ticketStore[index] = ticket;
+                    }
+                }
+                localStorage.setItem(gameInstance.address, JSON.stringify(ticketStore));
                 self.setStatus("<font color='green'>Bet revealed</font>" );
                 self.refreshUI();
             }).catch(function(e) {
@@ -43068,7 +43611,7 @@ window.App = {
                 self.setStatus("<font color='red'>Error while revealing your guess; see log.</font>");
             }); // revealBet ()
         }); // estimateGas()
-    },
+    }, // revealBet()
 
     declareWinner: function() {
         var self = this;
@@ -43077,17 +43620,9 @@ window.App = {
 
         gameInstance.getRoundInfo()
         .then( res => {
-            roundInfo = App.parseRoundInfo(res);
+            roundInfo = new App.RoundInfo(res);
             web3.eth.estimateGas( {from: account, data: gameInstance.declareWinner.getData }, function(error, res) {
                 var gasEstimate =  res + 10000 + roundInfo.ticketCountLimit * 1000;
-                // FIXME: declareWinner() throws on testrpc when game created with createGame():
-                //     Error: VM Exception while processing transaction: invalid opcode
-                console.debug("gameInstance.address:", gameInstance.address);
-                console.debug("getRoundInfo():", JSON.stringify(roundInfo, null, 4));
-                var timeNow = Math.floor(Date.now() / 1000);
-                console.debug("timeNow:", timeNow, "revealPeriodLength:", roundInfo.revealPeriodLength,
-                    "revealPeriodEnds:", roundInfo.revealPeriodEnds, "now-ends:", timeNow - roundInfo.revealPeriodEnds );
-                console.debug("from account:", account, "gasEstimate:", gasEstimate);
                 gameInstance.declareWinner({from: account, gas: gasEstimate})
                 .then( tx => {
                     self.setStatus("<font color='green'>Winner declared</green>" );
@@ -43158,23 +43693,29 @@ window.App = {
         });
     },
 
-    parseRoundInfo: function(result) {
-        return {
-            state: result[0],
-            requiredBetAmount: result[1],
-            feePt: result[2].toNumber(),
-            ticketCountLimit: result[3].toNumber(),
-            revealPeriodLength: result[4].toNumber(),
-            ticketCount: result[5].toNumber(),
-            revealedCount: result[6].toNumber(),
-            feeAmount: result[7],
-            winnablePotAmount: result[8],
-            currentPotAmount: result[9],
-            winningTicket: result[10].toNumber(),
-            winningAddress: result[11],
-            winningNumber: result[12].toNumber(),
-            revealPeriodEnds: result[13].toNumber()
-        }
+    Ticket: function(ticketId, guess, salt, account, isRevealed) {
+        this.ticketId = ticketId;
+        this.guess = guess;
+        this.salt = salt;
+        this.account = account;
+        this.isRevealed = isRevealed;
+    }, // Ticket()
+
+    RoundInfo: function(result) {
+        this.state = result[0];
+        this.requiredBetAmount = result[1];
+        this.feePt = result[2].toNumber();
+        this.ticketCountLimit = result[3].toNumber();
+        this.revealPeriodLength = result[4].toNumber();
+        this.ticketCount = result[5].toNumber();
+        this.revealedCount = result[6].toNumber();
+        this.feeAmount = result[7];
+        this.winnablePotAmount = result[8];
+        this.currentPotAmount = result[9];
+        this.winningTicket = result[10].toNumber();
+        this.winningAddress = result[11];
+        this.winningNumber = result[12].toNumber();
+        this.revealPeriodEnds = result[13].toNumber();
     },
 
     toHexString: function(byteArray) {
@@ -43202,7 +43743,7 @@ window.addEventListener('load', function() {
 
 
 /***/ }),
-/* 177 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43323,7 +43864,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 178 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -43560,7 +44101,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory) {
@@ -43714,7 +44255,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -43785,7 +44326,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory) {
@@ -43866,7 +44407,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -43949,7 +44490,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -44070,7 +44611,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -44133,7 +44674,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -44178,7 +44719,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -44237,7 +44778,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -44291,7 +44832,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -44340,7 +44881,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -44385,7 +44926,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -44420,7 +44961,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -44470,7 +45011,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -44620,7 +45161,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -44815,7 +45356,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -45012,7 +45553,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -45156,7 +45697,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory) {
@@ -45428,7 +45969,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -45513,7 +46054,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -45601,7 +46142,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -46376,10 +46917,10 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(201)();
+exports = module.exports = __webpack_require__(202)();
 // imports
 
 
@@ -46390,7 +46931,7 @@ exports.push([module.i, "body {\n  margin-left: 25%;\n  margin-right: 25%;\n  ma
 
 
 /***/ }),
-/* 201 */
+/* 202 */
 /***/ (function(module, exports) {
 
 /*
@@ -46446,7 +46987,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 202 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46454,7 +46995,7 @@ module.exports = function() {
 
 /* eslint-disable */
 
-var utils = __webpack_require__(203);
+var utils = __webpack_require__(204);
 var uint256Coder = utils.uint256Coder;
 var coderBoolean = utils.coderBoolean;
 var coderFixedBytes = utils.coderFixedBytes;
@@ -46586,15 +47127,15 @@ module.exports = {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(23).Buffer))
 
 /***/ }),
-/* 203 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(Buffer) {
 
 var BN = __webpack_require__(42);
-var numberToBN = __webpack_require__(209);
-var keccak256 = __webpack_require__(207).keccak_256;
+var numberToBN = __webpack_require__(210);
+var keccak256 = __webpack_require__(208).keccak_256;
 
 // from ethereumjs-util
 function stripZeros(aInput) {
@@ -47010,7 +47551,7 @@ module.exports = {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(23).Buffer))
 
 /***/ }),
-/* 204 */
+/* 205 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -47100,7 +47641,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 205 */
+/* 206 */
 /***/ (function(module, exports) {
 
 /**
@@ -47119,7 +47660,7 @@ module.exports = function isHexPrefixed(str) {
 
 
 /***/ }),
-/* 206 */
+/* 207 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -47130,7 +47671,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 207 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process, global) {/**
@@ -47608,7 +48149,7 @@ module.exports = Array.isArray || function (arr) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(161), __webpack_require__(34)))
 
 /***/ }),
-/* 208 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -47857,14 +48398,14 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 208;
+webpackContext.id = 209;
 
 /***/ }),
-/* 209 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var BN = __webpack_require__(42);
-var stripHexPrefix = __webpack_require__(210);
+var stripHexPrefix = __webpack_require__(211);
 
 /**
  * Returns a BN object, converts a number value to a BN
@@ -47904,10 +48445,10 @@ module.exports = function numberToBN(arg) {
 
 
 /***/ }),
-/* 210 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isHexPrefixed = __webpack_require__(205);
+var isHexPrefixed = __webpack_require__(206);
 
 /**
  * Removes '0x' from a given `String` is present
@@ -47924,7 +48465,7 @@ module.exports = function stripHexPrefix(str) {
 
 
 /***/ }),
-/* 211 */
+/* 212 */
 /***/ (function(module, exports) {
 
 /*
@@ -48176,7 +48717,7 @@ function updateLink(linkElement, obj) {
 
 
 /***/ }),
-/* 212 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // TODO: remove web3 requirement
@@ -48243,11 +48784,11 @@ module.exports = Blockchain;
 
 
 /***/ }),
-/* 213 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var sha3 = __webpack_require__(214);
-var schema_version = __webpack_require__(216).version;
+var sha3 = __webpack_require__(215);
+var schema_version = __webpack_require__(217).version;
 
 var TruffleSchema = {
   // Normalize options passed in to be the exact options required
@@ -48430,13 +48971,13 @@ module.exports = TruffleSchema;
 
 
 /***/ }),
-/* 214 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
 	if (true) {
 		// CommonJS
-		module.exports = exports = factory(__webpack_require__(162), __webpack_require__(215));
+		module.exports = exports = factory(__webpack_require__(162), __webpack_require__(216));
 	}
 	else if (typeof define === "function" && define.amd) {
 		// AMD
@@ -48758,7 +49299,7 @@ module.exports = TruffleSchema;
 }));
 
 /***/ }),
-/* 215 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory) {
@@ -49067,7 +49608,7 @@ module.exports = TruffleSchema;
 }));
 
 /***/ }),
-/* 216 */
+/* 217 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -49167,12 +49708,12 @@ module.exports = {
 };
 
 /***/ }),
-/* 217 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global, module) {var ethJSABI = __webpack_require__(202);
-var BlockchainUtils = __webpack_require__(212);
-var Web3 = __webpack_require__(218);
+/* WEBPACK VAR INJECTION */(function(global, module) {var ethJSABI = __webpack_require__(203);
+var BlockchainUtils = __webpack_require__(213);
+var Web3 = __webpack_require__(219);
 
 // For browserified version. If browserify gave us an empty version,
 // look for the one provided by the user.
@@ -49969,10 +50510,10 @@ var contract = (function(module) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(34), __webpack_require__(35)(module)))
 
 /***/ }),
-/* 218 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Web3 = __webpack_require__(233);
+var Web3 = __webpack_require__(234);
 
 // dont override global variable
 if (typeof window !== 'undefined' && typeof window.Web3 === 'undefined') {
@@ -49983,7 +50524,7 @@ module.exports = Web3;
 
 
 /***/ }),
-/* 219 */
+/* 220 */
 /***/ (function(module, exports) {
 
 module.exports = [
@@ -50242,7 +50783,7 @@ module.exports = [
 ];
 
 /***/ }),
-/* 220 */
+/* 221 */
 /***/ (function(module, exports) {
 
 module.exports = [
@@ -50355,7 +50896,7 @@ module.exports = [
 ];
 
 /***/ }),
-/* 221 */
+/* 222 */
 /***/ (function(module, exports) {
 
 module.exports = [
@@ -50506,7 +51047,7 @@ module.exports = [
 ];
 
 /***/ }),
-/* 222 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(5);
@@ -50543,7 +51084,7 @@ module.exports = SolidityTypeAddress;
 
 
 /***/ }),
-/* 223 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(5);
@@ -50579,7 +51120,7 @@ module.exports = SolidityTypeBool;
 
 
 /***/ }),
-/* 224 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(5);
@@ -50623,7 +51164,7 @@ module.exports = SolidityTypeBytes;
 
 
 /***/ }),
-/* 225 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(5);
@@ -50654,7 +51195,7 @@ module.exports = SolidityTypeDynamicBytes;
 
 
 /***/ }),
-/* 226 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(5);
@@ -50696,7 +51237,7 @@ module.exports = SolidityTypeInt;
 
 
 /***/ }),
-/* 227 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(5);
@@ -50738,7 +51279,7 @@ module.exports = SolidityTypeReal;
 
 
 /***/ }),
-/* 228 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(5);
@@ -50769,7 +51310,7 @@ module.exports = SolidityTypeString;
 
 
 /***/ }),
-/* 229 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(5);
@@ -50811,7 +51352,7 @@ module.exports = SolidityTypeUInt;
 
 
 /***/ }),
-/* 230 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(5);
@@ -50853,7 +51394,7 @@ module.exports = SolidityTypeUReal;
 
 
 /***/ }),
-/* 231 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50869,7 +51410,7 @@ if (typeof XMLHttpRequest === 'undefined') {
 
 
 /***/ }),
-/* 232 */
+/* 233 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -50877,7 +51418,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 233 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -50907,22 +51448,22 @@ module.exports = {
  * @date 2014
  */
 
-var RequestManager = __webpack_require__(247);
+var RequestManager = __webpack_require__(248);
 var Iban = __webpack_require__(28);
-var Eth = __webpack_require__(242);
-var DB = __webpack_require__(241);
-var Shh = __webpack_require__(245);
-var Net = __webpack_require__(243);
-var Personal = __webpack_require__(244);
-var Settings = __webpack_require__(248);
-var version = __webpack_require__(232);
+var Eth = __webpack_require__(243);
+var DB = __webpack_require__(242);
+var Shh = __webpack_require__(246);
+var Net = __webpack_require__(244);
+var Personal = __webpack_require__(245);
+var Settings = __webpack_require__(249);
+var version = __webpack_require__(233);
 var utils = __webpack_require__(3);
 var sha3 = __webpack_require__(17);
-var extend = __webpack_require__(237);
-var Batch = __webpack_require__(235);
+var extend = __webpack_require__(238);
+var Batch = __webpack_require__(236);
 var Property = __webpack_require__(19);
-var HttpProvider = __webpack_require__(239);
-var IpcProvider = __webpack_require__(240);
+var HttpProvider = __webpack_require__(240);
+var IpcProvider = __webpack_require__(241);
 
 
 
@@ -51029,7 +51570,7 @@ module.exports = Web3;
 
 
 /***/ }),
-/* 234 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -51123,7 +51664,7 @@ module.exports = AllSolidityEvents;
 
 
 /***/ }),
-/* 235 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -51195,7 +51736,7 @@ module.exports = Batch;
 
 
 /***/ }),
-/* 236 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -51223,8 +51764,8 @@ module.exports = Batch;
 var utils = __webpack_require__(3);
 var coder = __webpack_require__(39);
 var SolidityEvent = __webpack_require__(164);
-var SolidityFunction = __webpack_require__(238);
-var AllEvents = __webpack_require__(234);
+var SolidityFunction = __webpack_require__(239);
+var AllEvents = __webpack_require__(235);
 
 /**
  * Should be called to encode constructor params
@@ -51499,7 +52040,7 @@ module.exports = ContractFactory;
 
 
 /***/ }),
-/* 237 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var formatters = __webpack_require__(8);
@@ -51553,7 +52094,7 @@ module.exports = extend;
 
 
 /***/ }),
-/* 238 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -51806,7 +52347,7 @@ module.exports = SolidityFunction;
 
 
 /***/ }),
-/* 239 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51851,7 +52392,7 @@ if (typeof Meteor !== 'undefined' && Meteor.isServer) { // jshint ignore: line
 
 // node
 } else {
-    XMLHttpRequest = __webpack_require__(231).XMLHttpRequest; // jshint ignore: line
+    XMLHttpRequest = __webpack_require__(232).XMLHttpRequest; // jshint ignore: line
 }
 
 /**
@@ -51959,7 +52500,7 @@ module.exports = HttpProvider;
 
 
 /***/ }),
-/* 240 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52173,7 +52714,7 @@ module.exports = IpcProvider;
 
 
 /***/ }),
-/* 241 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -52245,7 +52786,7 @@ module.exports = DB;
 
 
 /***/ }),
-/* 242 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52279,13 +52820,13 @@ var utils = __webpack_require__(3);
 var Method = __webpack_require__(15);
 var Property = __webpack_require__(19);
 var c = __webpack_require__(26);
-var Contract = __webpack_require__(236);
+var Contract = __webpack_require__(237);
 var watches = __webpack_require__(29);
 var Filter = __webpack_require__(27);
-var IsSyncing = __webpack_require__(249);
-var namereg = __webpack_require__(246);
+var IsSyncing = __webpack_require__(250);
+var namereg = __webpack_require__(247);
 var Iban = __webpack_require__(28);
-var transfer = __webpack_require__(250);
+var transfer = __webpack_require__(251);
 
 var blockCall = function (args) {
     return (utils.isString(args[0]) && args[0].indexOf('0x') === 0) ? "eth_getBlockByHash" : "eth_getBlockByNumber";
@@ -52595,7 +53136,7 @@ module.exports = Eth;
 
 
 /***/ }),
-/* 243 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -52653,7 +53194,7 @@ module.exports = Net;
 
 
 /***/ }),
-/* 244 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52745,7 +53286,7 @@ module.exports = Personal;
 
 
 /***/ }),
-/* 245 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -52837,7 +53378,7 @@ module.exports = Shh;
 
 
 /***/ }),
-/* 246 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -52862,8 +53403,8 @@ module.exports = Shh;
  * @date 2015
  */
 
-var globalRegistrarAbi = __webpack_require__(219);
-var icapRegistrarAbi= __webpack_require__(220);
+var globalRegistrarAbi = __webpack_require__(220);
+var icapRegistrarAbi= __webpack_require__(221);
 
 var globalNameregAddress = '0xc6d9d2cd449a754c494264e1809c50e34d64562b';
 var icapNameregAddress = '0xa1a111bc074c9cfa781f0c38e63bd51c91b8af00';
@@ -52882,7 +53423,7 @@ module.exports = {
 
 
 /***/ }),
-/* 247 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -53153,7 +53694,7 @@ module.exports = RequestManager;
 
 
 /***/ }),
-/* 248 */
+/* 249 */
 /***/ (function(module, exports) {
 
 
@@ -53168,7 +53709,7 @@ module.exports = Settings;
 
 
 /***/ }),
-/* 249 */
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -53267,7 +53808,7 @@ module.exports = IsSyncing;
 
 
 /***/ }),
-/* 250 */
+/* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -53293,7 +53834,7 @@ module.exports = IsSyncing;
  */
 
 var Iban = __webpack_require__(28);
-var exchangeAbi = __webpack_require__(221);
+var exchangeAbi = __webpack_require__(222);
 
 /**
  * Should be used to make Iban transfer
@@ -53365,7 +53906,7 @@ module.exports = transfer;
 
 
 /***/ }),
-/* 251 */
+/* 252 */
 /***/ (function(module, exports) {
 
 module.exports = [
@@ -53624,7 +54165,7 @@ module.exports = [
 ];
 
 /***/ }),
-/* 252 */
+/* 253 */
 /***/ (function(module, exports) {
 
 module.exports = [
@@ -53737,7 +54278,7 @@ module.exports = [
 ];
 
 /***/ }),
-/* 253 */
+/* 254 */
 /***/ (function(module, exports) {
 
 module.exports = [
@@ -53889,7 +54430,7 @@ module.exports = [
 ];
 
 /***/ }),
-/* 254 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(6);
@@ -53921,7 +54462,7 @@ module.exports = SolidityTypeAddress;
 
 
 /***/ }),
-/* 255 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(6);
@@ -53953,7 +54494,7 @@ module.exports = SolidityTypeBool;
 
 
 /***/ }),
-/* 256 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(6);
@@ -53988,7 +54529,7 @@ module.exports = SolidityTypeBytes;
 
 
 /***/ }),
-/* 257 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(6);
@@ -54014,7 +54555,7 @@ module.exports = SolidityTypeDynamicBytes;
 
 
 /***/ }),
-/* 258 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(6);
@@ -54052,7 +54593,7 @@ module.exports = SolidityTypeInt;
 
 
 /***/ }),
-/* 259 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(6);
@@ -54090,7 +54631,7 @@ module.exports = SolidityTypeReal;
 
 
 /***/ }),
-/* 260 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(6);
@@ -54116,7 +54657,7 @@ module.exports = SolidityTypeString;
 
 
 /***/ }),
-/* 261 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(6);
@@ -54154,7 +54695,7 @@ module.exports = SolidityTypeUInt;
 
 
 /***/ }),
-/* 262 */
+/* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(6);
@@ -54192,7 +54733,7 @@ module.exports = SolidityTypeUReal;
 
 
 /***/ }),
-/* 263 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54208,7 +54749,7 @@ if (typeof XMLHttpRequest === 'undefined') {
 
 
 /***/ }),
-/* 264 */
+/* 265 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -54216,7 +54757,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 265 */
+/* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -54246,23 +54787,23 @@ module.exports = {
  * @date 2014
  */
 
-var RequestManager = __webpack_require__(280);
+var RequestManager = __webpack_require__(281);
 var Iban = __webpack_require__(32);
-var Eth = __webpack_require__(274);
-var DB = __webpack_require__(273);
-var Shh = __webpack_require__(277);
-var Net = __webpack_require__(275);
-var Personal = __webpack_require__(276);
-var Swarm = __webpack_require__(278);
-var Settings = __webpack_require__(281);
-var version = __webpack_require__(264);
+var Eth = __webpack_require__(275);
+var DB = __webpack_require__(274);
+var Shh = __webpack_require__(278);
+var Net = __webpack_require__(276);
+var Personal = __webpack_require__(277);
+var Swarm = __webpack_require__(279);
+var Settings = __webpack_require__(282);
+var version = __webpack_require__(265);
 var utils = __webpack_require__(4);
 var sha3 = __webpack_require__(20);
-var extend = __webpack_require__(269);
-var Batch = __webpack_require__(267);
+var extend = __webpack_require__(270);
+var Batch = __webpack_require__(268);
 var Property = __webpack_require__(16);
-var HttpProvider = __webpack_require__(271);
-var IpcProvider = __webpack_require__(272);
+var HttpProvider = __webpack_require__(272);
+var IpcProvider = __webpack_require__(273);
 var BigNumber = __webpack_require__(22);
 
 
@@ -54372,7 +54913,7 @@ module.exports = Web3;
 
 
 /***/ }),
-/* 266 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -54466,7 +55007,7 @@ module.exports = AllSolidityEvents;
 
 
 /***/ }),
-/* 267 */
+/* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -54538,7 +55079,7 @@ module.exports = Batch;
 
 
 /***/ }),
-/* 268 */
+/* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -54566,8 +55107,8 @@ module.exports = Batch;
 var utils = __webpack_require__(4);
 var coder = __webpack_require__(40);
 var SolidityEvent = __webpack_require__(168);
-var SolidityFunction = __webpack_require__(270);
-var AllEvents = __webpack_require__(266);
+var SolidityFunction = __webpack_require__(271);
+var AllEvents = __webpack_require__(267);
 
 /**
  * Should be called to encode constructor params
@@ -54854,7 +55395,7 @@ module.exports = ContractFactory;
 
 
 /***/ }),
-/* 269 */
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var formatters = __webpack_require__(10);
@@ -54908,7 +55449,7 @@ module.exports = extend;
 
 
 /***/ }),
-/* 270 */
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -55176,7 +55717,7 @@ module.exports = SolidityFunction;
 
 
 /***/ }),
-/* 271 */
+/* 272 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -55213,10 +55754,10 @@ if (typeof window !== 'undefined' && window.XMLHttpRequest) {
     XMLHttpRequest = window.XMLHttpRequest; // jshint ignore: line
 // node
 } else {
-    XMLHttpRequest = __webpack_require__(263).XMLHttpRequest; // jshint ignore: line
+    XMLHttpRequest = __webpack_require__(264).XMLHttpRequest; // jshint ignore: line
 }
 
-var XHR2 = __webpack_require__(284); // jshint ignore: line
+var XHR2 = __webpack_require__(287); // jshint ignore: line
 
 /**
  * HttpProvider should be used to send rpc calls over http
@@ -55335,7 +55876,7 @@ module.exports = HttpProvider;
 
 
 /***/ }),
-/* 272 */
+/* 273 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55549,7 +56090,7 @@ module.exports = IpcProvider;
 
 
 /***/ }),
-/* 273 */
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -55621,7 +56162,7 @@ module.exports = DB;
 
 
 /***/ }),
-/* 274 */
+/* 275 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55655,13 +56196,13 @@ var utils = __webpack_require__(4);
 var Method = __webpack_require__(11);
 var Property = __webpack_require__(16);
 var c = __webpack_require__(30);
-var Contract = __webpack_require__(268);
+var Contract = __webpack_require__(269);
 var watches = __webpack_require__(33);
 var Filter = __webpack_require__(31);
-var IsSyncing = __webpack_require__(282);
-var namereg = __webpack_require__(279);
+var IsSyncing = __webpack_require__(283);
+var namereg = __webpack_require__(280);
 var Iban = __webpack_require__(32);
-var transfer = __webpack_require__(283);
+var transfer = __webpack_require__(284);
 
 var blockCall = function (args) {
     return (utils.isString(args[0]) && args[0].indexOf('0x') === 0) ? "eth_getBlockByHash" : "eth_getBlockByNumber";
@@ -55982,7 +56523,7 @@ module.exports = Eth;
 
 
 /***/ }),
-/* 275 */
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -56040,7 +56581,7 @@ module.exports = Net;
 
 
 /***/ }),
-/* 276 */
+/* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56140,7 +56681,7 @@ module.exports = Personal;
 
 
 /***/ }),
-/* 277 */
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -56232,7 +56773,7 @@ module.exports = Shh;
 
 
 /***/ }),
-/* 278 */
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56384,7 +56925,7 @@ module.exports = Swarm;
 
 
 /***/ }),
-/* 279 */
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -56409,8 +56950,8 @@ module.exports = Swarm;
  * @date 2015
  */
 
-var globalRegistrarAbi = __webpack_require__(251);
-var icapRegistrarAbi= __webpack_require__(252);
+var globalRegistrarAbi = __webpack_require__(252);
+var icapRegistrarAbi= __webpack_require__(253);
 
 var globalNameregAddress = '0xc6d9d2cd449a754c494264e1809c50e34d64562b';
 var icapNameregAddress = '0xa1a111bc074c9cfa781f0c38e63bd51c91b8af00';
@@ -56429,7 +56970,7 @@ module.exports = {
 
 
 /***/ }),
-/* 280 */
+/* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -56700,7 +57241,7 @@ module.exports = RequestManager;
 
 
 /***/ }),
-/* 281 */
+/* 282 */
 /***/ (function(module, exports) {
 
 
@@ -56715,7 +57256,7 @@ module.exports = Settings;
 
 
 /***/ }),
-/* 282 */
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -56814,7 +57355,7 @@ module.exports = IsSyncing;
 
 
 /***/ }),
-/* 283 */
+/* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -56840,7 +57381,7 @@ module.exports = IsSyncing;
  */
 
 var Iban = __webpack_require__(32);
-var exchangeAbi = __webpack_require__(253);
+var exchangeAbi = __webpack_require__(254);
 
 /**
  * Should be used to make Iban transfer
@@ -56912,14 +57453,32 @@ module.exports = transfer;
 
 
 /***/ }),
-/* 284 */
+/* 285 */
+/***/ (function(module, exports) {
+
+module.exports = function() {
+	throw new Error("define cannot be used indirect");
+};
+
+
+/***/ }),
+/* 286 */
+/***/ (function(module, exports) {
+
+/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */
+module.exports = __webpack_amd_options__;
+
+/* WEBPACK VAR INJECTION */}.call(exports, {}))
+
+/***/ }),
+/* 287 */
 /***/ (function(module, exports) {
 
 module.exports = XMLHttpRequest;
 
 
 /***/ }),
-/* 285 */
+/* 288 */
 /***/ (function(module, exports) {
 
 /* (ignored) */
