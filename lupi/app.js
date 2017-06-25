@@ -40124,10 +40124,154 @@ module.exports = {
 			"links": {},
 			"address": "0x750dc6365cd4e62e0322e97ad3e31019d0f63094",
 			"updated_at": 1498245515267
+		},
+		"1498426682563": {
+			"events": {
+				"0x34f5f1c0de0c5064c900b95aca75740789fce2c778343bcfb333e45219aa8989": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "ticketId",
+							"type": "uint256"
+						}
+					],
+					"name": "e_BetPlaced",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": false,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0x750dc6365cd4e62e0322e97ad3e31019d0f63094",
+			"updated_at": 1498426739664
+		},
+		"1498427322157": {
+			"events": {
+				"0x34f5f1c0de0c5064c900b95aca75740789fce2c778343bcfb333e45219aa8989": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "ticketId",
+							"type": "uint256"
+						}
+					],
+					"name": "e_BetPlaced",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": false,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0x750dc6365cd4e62e0322e97ad3e31019d0f63094",
+			"updated_at": 1498427341161
+		},
+		"1498427402093": {
+			"events": {
+				"0x34f5f1c0de0c5064c900b95aca75740789fce2c778343bcfb333e45219aa8989": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "ticketId",
+							"type": "uint256"
+						}
+					],
+					"name": "e_BetPlaced",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": false,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0x750dc6365cd4e62e0322e97ad3e31019d0f63094",
+			"updated_at": 1498427415610
+		},
+		"1498430440595": {
+			"events": {
+				"0x34f5f1c0de0c5064c900b95aca75740789fce2c778343bcfb333e45219aa8989": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "ticketId",
+							"type": "uint256"
+						}
+					],
+					"name": "e_BetPlaced",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": false,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0x750dc6365cd4e62e0322e97ad3e31019d0f63094",
+			"updated_at": 1498430460053
 		}
 	},
 	"schema_version": "0.0.5",
-	"updated_at": 1498245515267
+	"updated_at": 1498430460053
 };
 
 /***/ }),
@@ -41400,10 +41544,222 @@ module.exports = {
 			"links": {},
 			"address": "0x1578c4406b6a8808bae0945036a8896ede3c5de3",
 			"updated_at": 1498245515270
+		},
+		"1498426682563": {
+			"events": {
+				"0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "gameIdx",
+							"type": "uint256"
+						},
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameAdded",
+					"type": "event"
+				},
+				"0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameCreated",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": false,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0x1578c4406b6a8808bae0945036a8896ede3c5de3",
+			"updated_at": 1498426739666
+		},
+		"1498427322157": {
+			"events": {
+				"0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "gameIdx",
+							"type": "uint256"
+						},
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameAdded",
+					"type": "event"
+				},
+				"0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameCreated",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": false,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0x1578c4406b6a8808bae0945036a8896ede3c5de3",
+			"updated_at": 1498427341162
+		},
+		"1498427402093": {
+			"events": {
+				"0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "gameIdx",
+							"type": "uint256"
+						},
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameAdded",
+					"type": "event"
+				},
+				"0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameCreated",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": false,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0x1578c4406b6a8808bae0945036a8896ede3c5de3",
+			"updated_at": 1498427415613
+		},
+		"1498430440595": {
+			"events": {
+				"0x8d79dc5a51d7790db5d82e056aba247a3d456eeba3ad4604a21eb483bffde07c": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": true,
+							"name": "gameIdx",
+							"type": "uint256"
+						},
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameAdded",
+					"type": "event"
+				},
+				"0x2b4069d85d849574cd9e31ed7df2fbf75329e9c0b7075b0f8add3031dc3fb72f": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "gameAddress",
+							"type": "address"
+						}
+					],
+					"name": "e_GameCreated",
+					"type": "event"
+				},
+				"0x70aea8d848e8a90fb7661b227dc522eb6395c3dac71b63cb59edd5c9899b2364": {
+					"anonymous": false,
+					"inputs": [
+						{
+							"indexed": false,
+							"name": "old",
+							"type": "address"
+						},
+						{
+							"indexed": false,
+							"name": "current",
+							"type": "address"
+						}
+					],
+					"name": "NewOwner",
+					"type": "event"
+				}
+			},
+			"links": {},
+			"address": "0x1578c4406b6a8808bae0945036a8896ede3c5de3",
+			"updated_at": 1498430460054
 		}
 	},
 	"schema_version": "0.0.5",
-	"updated_at": 1498245515270
+	"updated_at": 1498430460054
 };
 
 /***/ }),
@@ -43363,34 +43719,35 @@ window.App = {
                     ticketsListDiv.removeChild(ticketsListDiv.lastChild);
                 }
                 var tickets = JSON.parse( localStorage.getItem(gameInstance.address));
-                var revealedNode = document.createElement("div");
-                revealedNode.id = "revealedTicketsListDiv";
-                var revealNode = document.createElement("div");
-                revealNode.id = "revealTicketButtonsDiv";
-                var buttonNode;
-                for (var i=0; i < tickets.length; i++) {
-                    if (tickets[i].isRevealed) {
-                        //revealedNode.appendChild( document.createElement("br"));
-                        revealedNode.appendChild(  document.createTextNode("TicketId: " + tickets[i].ticketId
-                            + ", guess: " + tickets[i].guess + " | ") );
-                    } else {
-                        buttonNode = document.createElement("button");
-                        buttonNode.id = "revealButton" + i;
-                        buttonNode.value = "Reveal ticket " + tickets[i].ticketId;
-                        buttonNode.ticket = tickets[i];
-                        buttonNode.appendChild(document.createTextNode(buttonNode.value));
+                if ( tickets != null ) {
+                    var revealedNode = document.createElement("div");
+                    revealedNode.id = "revealedTicketsListDiv";
+                    var revealNode = document.createElement("div");
+                    revealNode.id = "revealTicketButtonsDiv";
+                    var buttonNode;
+                    for (var i=0; i < tickets.length; i++) {
+                        if (tickets[i].isRevealed) {
+                            //revealedNode.appendChild( document.createElement("br"));
+                            revealedNode.appendChild(  document.createTextNode("TicketId: " + tickets[i].ticketId
+                                + ", guess: " + tickets[i].guess + " | ") );
+                        } else {
+                            buttonNode = document.createElement("button");
+                            buttonNode.id = "revealButton" + i;
+                            buttonNode.value = "Reveal ticket " + tickets[i].ticketId;
+                            buttonNode.ticket = tickets[i];
+                            buttonNode.appendChild(document.createTextNode(buttonNode.value));
 
-                        buttonNode.addEventListener('click', function(){
-                            App.revealBet(gameInstance.address, this.ticket);
-                        });
-                        revealNode.appendChild(buttonNode);
-                        console.log(tickets[i].ticketId);
-                    }
-                } // for each ticket in store
-                ticketsListDiv.appendChild(revealNode);
-                ticketsListDiv.appendChild(document.createElement("br"));
-                ticketsListDiv.appendChild(document.createTextNode("Tickets you already revealed:"));
-                ticketsListDiv.appendChild(revealedNode);
+                            buttonNode.addEventListener('click', function(){
+                                App.revealBet(gameInstance.address, this.ticket);
+                            });
+                            revealNode.appendChild(buttonNode);
+                        }
+                    } // for each ticket in store
+                    ticketsListDiv.appendChild(revealNode);
+                    ticketsListDiv.appendChild(document.createElement("br"));
+                    ticketsListDiv.appendChild(document.createTextNode("Tickets you already revealed:"));
+                    ticketsListDiv.appendChild(revealedNode);
+                }
             }
             revealStartOnlyDiv.style.display = revealStart ? "inline" : "none";
 
@@ -43421,6 +43778,7 @@ window.App = {
 
     placeBet: function() {
         var self = this;
+        var gasEstimate;
         self.setStatus("Initiating transaction... (please wait)");
         var guess = parseInt(document.getElementById("guess").value);
         var salt, ticketId, sealedBet;
@@ -43437,9 +43795,12 @@ window.App = {
         }).then( function(sealRes) {
             sealedBet = sealRes;
             web3.eth.estimateGas( {from: account, data: gameInstance.placeBet.getData}, function(error, res ) {
-                var gasEstimate = res + 50000;
+                gasEstimate = res + 50000;
                 gameInstance.placeBet(sealedBet, {from: account, value: roundInfo.requiredBetAmount, gas: gasEstimate})
                 .then(function( tx) {
+                    if( tx.receipt.gasUsed == gasEstimate) {
+                        throw("placeBet error, all gas used: " + tx.receipt.gasUsed);
+                    }
                     ticketId = tx.logs[0].args.ticketId.toNumber() ;
                     var status = "<font color='green'>Successful guess.</font>"
                     try {
@@ -43550,12 +43911,16 @@ window.App = {
 
     startRevealing: function() {
         var self = this;
+        var gasEstimate;
         self.setStatus("Initiating transaction... (please wait)");
 
         web3.eth.estimateGas( {from: account, data: gameInstance.startRevealing.getData }, function(error, res) {
-            var gasEstimate = res + 10000;
+            gasEstimate = res + 10000;
             gameInstance.startRevealing({from: account, gas: gasEstimate})
             .then( tx => {
+                if( tx.receipt.gasUsed == gasEstimate) {
+                    throw("startRevealing error, all gas used: " + tx.receipt.gasUsed);
+                }
                 return gameInstance.getRoundInfo();
             }).then( roundRes => {
                 var roundInfo = new App.RoundInfo(roundRes);
@@ -43570,23 +43935,27 @@ window.App = {
 
     manualRevealBet: function() {
         var self = this;
-        var accountInput = parseInt(document.getElementById("accountInput").value);
+        var accountInput = document.getElementById("accountInput").value;
         var ticketId = parseInt(document.getElementById("ticketId").value);
         var guess = parseInt(document.getElementById("revealGuess").value);
         var salt = document.getElementById("salt").value;
         var ticket = new App.Ticket(ticketId, guess, salt, accountInput);
+
         App.revealBet(gameInstance.address, ticket);
     },
 
     revealBet: function( gameAddress, ticket) {
         var self = this;
+        var gasEstimate;
         self.setStatus("Initiating transaction... (please wait)");
-
         // TODO: first reveal ca. 167000 then 11700 or 770000 ...
         web3.eth.estimateGas( {from: account, data: gameInstance.revealBet.getData }, function( error, res) {
-            var gasEstimate = res + 140000;
+            gasEstimate = res + 140000;
             gameInstance.revealBetForAddress(ticket.account, ticket.ticketId, ticket.guess, ticket.salt, {from: account, gas: gasEstimate})
             .then( tx => {
+                if( tx.receipt.gasUsed == gasEstimate) {
+                    throw("revealBetForAddress error, all gas used: " + tx.receipt.gasUsed);
+                }
                 // Successful reveal, update localeStorage
                 ticket.isRevealed = true;
                 var ticketStore;
@@ -43615,6 +43984,7 @@ window.App = {
 
     declareWinner: function() {
         var self = this;
+        var gasEstimate;
         var roundInfo;
         self.setStatus("Initiating transaction... (please wait)");
 
@@ -43622,9 +43992,12 @@ window.App = {
         .then( res => {
             roundInfo = new App.RoundInfo(res);
             web3.eth.estimateGas( {from: account, data: gameInstance.declareWinner.getData }, function(error, res) {
-                var gasEstimate =  res + 10000 + roundInfo.ticketCountLimit * 1000;
+                gasEstimate =  res + 10000 + roundInfo.ticketCountLimit * 1000;
                 gameInstance.declareWinner({from: account, gas: gasEstimate})
                 .then( tx => {
+                    if( tx.receipt.gasUsed == gasEstimate) {
+                        throw("declareWinner error, all gas used: " + tx.receipt.gasUsed);
+                    }
                     self.setStatus("<font color='green'>Winner declared</green>" );
                     self.refreshUI();
                 }).catch(function(e) {
@@ -43637,12 +44010,16 @@ window.App = {
 
     payWinner: function() {
         var self = this;
+        var gasEstimate;
         self.setStatus("Initiating transaction... (please wait)");
 
         web3.eth.estimateGas( {from: account, data: gameInstance.payWinner.getData }, function(error, res) {
-            var gasEstimate = res + 10000;
+            gasEstimate = res + 10000;
             gameInstance.payWinner( {from: account, gas: gasEstimate})
             .then( tx => {
+                if( tx.receipt.gasUsed == gasEstimate) {
+                    throw("payWinner error, all gas used: " + tx.receipt.gasUsed);
+                }
                 self.setStatus("<font color='green'>Winner payed</green>" );
                 self.refreshUI();
             }).catch(function(e) {
@@ -43654,13 +44031,17 @@ window.App = {
 
     refund: function() {
         var self = this;
+        var gasEstimate;
         self.setStatus("Initiating transaction... (please wait)");
         var ticketId =  parseInt(document.getElementById("refundTicketId").value);
 
         web3.eth.estimateGas( {from: account, data: gameInstance.refund.getData }, function(error, res) {
-            var gasEstimate = res + 10000;
+            gasEstimate = res + 10000;
             gameInstance.refund( ticketId, {from: account, gas: gasEstimate})
             .then( tx => {
+                if( tx.receipt.gasUsed == gasEstimate) {
+                    throw("refund error, all gas used: " + tx.receipt.gasUsed);
+                }
                 self.setStatus("<font color='green'>Ticket refunded</font>" );
                 self.refreshUI();
             }).catch(function(e) {
@@ -43672,7 +44053,7 @@ window.App = {
 
     createGame: function() {
         var self = this;
-
+        var gasEstimate;
         self.setStatus("Initiating transaction... (please wait)");
         var requiredBetAmount = web3.toWei( document.getElementById("requiredBetAmountInput").value, "ether" );
         var ticketCountLimit = parseInt(document.getElementById("ticketCountLimitInput").value);
@@ -43680,10 +44061,13 @@ window.App = {
         var feePt = document.getElementById("feePtInput").value * 10000;
 
         //web3.eth.estimateGas( {from: account, data: lupiManagerInstance.createGame.getData }) + 10000;
-        var gasEstimate = 1200000;
+        gasEstimate = 1200000;
         lupiManagerInstance.createGame(requiredBetAmount, ticketCountLimit, revealPeriodLength, feePt,
                  {from: account, gas: gasEstimate})
         .then( tx => {
+            if( tx.receipt.gasUsed == gasEstimate) {
+                throw("createGame error, all gas used: " + tx.receipt.gasUsed);
+            }
             self.setStatus("<font color='green'>Game created. Idx: " + tx.logs[2].args.gameIdx
             + " address: " + tx.logs[1].args.gameAddress + " </font>" );
             self.refreshUI();
