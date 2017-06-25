@@ -139,8 +139,10 @@
         <br><a href="https://github.com/DecentLabs/ethereum-lupi/blob/master/README.md" target="_blank">Learn more about the game</a>
         <div id="backupDiv" style="display: none">
             <br><a href='#self' onclick='App.exportTickets(); return false;'>Download your tickets</a> for backup
-            <br>Restore tickets: <input type="file" onchange='App.importTickets(this)' accept=".json"></a>
         </div> <!--backupDiv -->
+        <div id="restoreDiv" style="display: block">
+            <br>Restore tickets: <input type="file" onchange='App.importTickets(this)' accept=".json"></a>
+        </div> <!-- restoreDiv -->
 
         <br><span class="hint"><strong>Hint:</strong> open the browser developer console to view any errors and warnings.</span>
         <br><a id="toggleDebugInfoText" href="javascript:App.toggleDebugInfo();">Show debug info >></a>

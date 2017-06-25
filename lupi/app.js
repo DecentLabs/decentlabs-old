@@ -43896,9 +43896,10 @@ window.App = {
         else { //this is where you could fallback to Java Applet, Flash or similar
             return false;
         }
-        self.setStatus("<font color='green'>Successfully ticket import from "
+        self.setStatus("<font color='green'>Successful ticket import from "
                 + filePath.files[0].name + "</green>");
         filePath.value = "";
+        App.refreshUI();
         return true;
     }, // importTickets
 
