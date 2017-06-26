@@ -136,16 +136,27 @@
             <hr>
         </div> <!-- tiedDiv -->
 
-        <br><a href="https://github.com/DecentLabs/ethereum-lupi/blob/master/README.md" target="_blank">Learn more about the game</a>
+        <a id="subscribeAlertText" href="javascript:App.toggleSubscribeAlert();">Get notified when you need to reveal >></a>
+        <div id="subscribeAlertDiv" style="display: none">
+            <h2>Subscribe alerts</h2>
+            <br>Get notified when a reveal period or a new games starts<br>
+            <br><label for="emailInput">Email:</label><input type="text" id="emailInput" style="width: auto;" size="35" placeholder="your@email.com"></input>
+            <br><br><button id="subscribeButton" onclick="App.subscribeAlert()">Notify me</button>
+            <br><span class="hint">Note: It's an experimental feature, no guarantee that alerts will be sent out.</span>
+            <hr>
+        </div> <!-- subscribeAlertDiv -->
+        <hr>
         <div id="backupDiv" style="display: none">
             <br><a href='#self' onclick='App.exportTickets(); return false;'>Download your tickets</a> for backup
         </div> <!--backupDiv -->
         <div id="restoreDiv" style="display: block">
             <br>Restore tickets: <input type="file" onchange='App.importTickets(this)' accept=".json"></a>
         </div> <!-- restoreDiv -->
+        <hr>
+        <br><a href="https://github.com/DecentLabs/ethereum-lupi/blob/master/README.md" target="_blank">Learn more about the game</a>
 
-        <br><span class="hint"><strong>Hint:</strong> open the browser developer console to view any errors and warnings.</span>
-        <br><a id="toggleDebugInfoText" href="javascript:App.toggleDebugInfo();">Show debug info >></a>
+        <br><br><span class="hint"><strong>Hint:</strong> open the browser developer console to view any errors and warnings.</span>
+        <br><br><a id="toggleDebugInfoText" href="javascript:App.toggleDebugInfo();">Show debug info >></a>
 
         <div id="massageDiv" style="display:none">
             <h2>Debug massage</h2>
