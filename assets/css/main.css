@@ -2604,4 +2604,15 @@ table {
   #intro, #why {
     background-attachment: scroll; } }
 
+h3 > small, h4 > small {
+  font-weight: normal;
+  font-size: 0.75em;
+  opacity: 0.5;
+  margin-left: 0.5em; }
+
+body .features {
+  background-color: transparent; }
+  body .features > section {
+    padding: 3em 3em 1em 3em; }
+
 /*# sourceMappingURL=main.css.map */
