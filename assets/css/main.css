@@ -2574,11 +2574,11 @@ table {
       display: none; } }
 
 /* Intro */
-.logo {
+#intro .logo, #why .logo, #overview .logo {
   opacity: 0.5;
   height: 80px; }
 
-#intro .bg, #why .bg {
+#intro .bg, #why .bg, #overview .bg {
   position: absolute;
   top: 0;
   right: 0;
@@ -2591,17 +2591,17 @@ table {
   background-size: 100% 100%;
   opacity: 0.05; }
 
-#intro p, #why p {
+#intro p, #why p, #overview p {
   font-size: 1.5em; }
   @media screen and (max-width: 980px) {
-    #intro p br, #why p br {
+    #intro p br, #why p br, #overview p br {
       display: none; } }
   @media screen and (max-width: 736px) {
-    #intro p, #why p {
+    #intro p, #why p, #overview p {
       font-size: 1.5em; } }
 
 @media screen and (max-width: 1280px) {
-  #intro, #why {
+  #intro, #why, #overview {
     background-attachment: scroll; } }
 
 h3 > small, h4 > small {
@@ -2615,19 +2615,13 @@ body .features {
   body .features > section {
     padding: 3em 3em 1em 3em; }
 
-
-
-
 .desktop {
-  display: none;
-}
+  display: none; }
+
 @media screen and (min-width: 800px) {
   .desktop {
-    display: block;
-  }
+    display: block; }
   .mobile {
-    display: none;
-  }
-}
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
