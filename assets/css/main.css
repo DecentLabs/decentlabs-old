@@ -2574,7 +2574,7 @@ table {
       display: none; } }
 
 /* Intro */
-#intro .logo, #why .logo {
+.logo {
   opacity: 0.5;
   height: 80px; }
 
@@ -2614,5 +2614,20 @@ body .features {
   background-color: transparent; }
   body .features > section {
     padding: 3em 3em 1em 3em; }
+
+
+
+
+.desktop {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
