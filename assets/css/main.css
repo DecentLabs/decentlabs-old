@@ -2575,7 +2575,6 @@ table {
 
 /* Intro */
 #intro .logo, #why .logo, #overview .logo {
-  opacity: 0.5;
   height: 80px; }
 
 #intro .bg, #why .bg, #overview .bg {
@@ -2623,5 +2622,10 @@ body .features {
     display: block; }
   .mobile {
     display: none; } }
+
+.contact {
+  display: inline-block;
+  margin: 0 0.5em;
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */
